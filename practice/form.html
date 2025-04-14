@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/" method="POST">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter name" required />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter email"
+          required
+          disabled
+        />
+      </div>
+      <br />
+      <div>
+        <label for="password" placeholder="Enter password" required
+          >Password</label
+        >
+        <input type="password" id="password" />
+      </div>
+      <br />
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <h1>Support</h1>
+
+    <form>
+      <label for="product">Product</label>
+      <br />
+      <select name="product" id="product" multiple size="4">
+        <option value="iphone">Iphone</option>
+        <option value="imac">IMac</option>
+        <option value="macbook">Macbook</option>
+        <option value="macbook-pro">Macbook Pro</option>
+      </select>
+      <br />
+      <textarea
+        name="message"
+        id="message"
+        placeholder="Enter your issue"
+      ></textarea>
+      <input type="submit" value="Submit" />
+    </form>
+    <form>
+      <h1>Favourite programming language</h1>
+      <form>
+        <label for="javascript">
+          <input
+            type="checkbox"
+            value="html"
+            name="languages"
+            id="javascript"
+            value="html"
+          />
+          Javascript
+        </label>
+      </form>
+    </form>
+    <h2>Product Size</h2>
+    <form>
+      <label for="small">
+        <input type="radio" name="size" id="small" value="small" />
+        Small
+      </label>
+      <label for="medium">
+        <input type="radio" name="size" id="medium" value="medium" />
+        Medium
+      </label>
+      <label for="large">
+        <input type="radio" name="size" id="large" value="large" />
+        large
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+/*Type selector*/
+/* h2 {
+  color: red;
+  font-size: 30px;
+}
+a {
+  color: blue;
+  text-decoration: none;
+} */
+/* class selector*/
+body {
+  font-family: "Poppins", sans-serif;
+  border: 3px solid purple;
+  line-height: 1.6rem;
+}
+h2 {
+  font-size: medium;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: normal;
+}
+.sporty {
+  color: red;
+}
+.casual {
+  color: blue;
+}
+.formal {
+  color: red;
+}
+/*id selector*/
+#container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+/*Multiple styles*/
+.sporty,
+.casual,
+.formal {
+  font-size: 35px;
+}
+/* 
+Descendant style*/
+/* #container p {
+  background: blue;
+}  */
+
+/*higher specificity */
