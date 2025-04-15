@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins" sans-serif;
+}
+header {
+  padding: 30px;
+  background-color: coral;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: rgb(44, 43, 43);
+}
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  padding: 15px;
+  background-color: cornsilk;
+}
+main {
+  display: flex;
+  padding: 40px;
+  gap: 70px;
+  line-height: 1.6rem;
+}
+.title {
+  margin-bottom: 10px;
+}
+main section {
+  flex: 1;
+}
+main aside {
+  width: 300px;
+}
+aside a {
+  text-decoration: none;
+}
+aside li {
+  list-style: none;
+  background-color: cornsilk;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  font-size: large;
+}
+aside h1 {
+  background-color: coral;
+  padding: 15px;
+  color: white;
+}
