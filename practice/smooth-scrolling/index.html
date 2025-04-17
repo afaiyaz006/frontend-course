@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#project-1">Project-1</a></li>
+          <li><a href="#project-2">Project-2</a></li>
+          <li><a href="#project-3">Project-3</a></li>
+          <li><a href="#project-4">Project-4</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section id="welcome" class="section">
+        <h2>Welcome</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil in
+          esse temporibus iure repellat qui, nesciunt sed. Ea ducimus suscipit
+          quam debitis obcaecati tenetur minus, accusantium quibusdam dolor ad
+          fugiat voluptates, eveniet minima quas laboriosam id recusandae labore
+          iure, dolores nisi odio amet quis hic architecto. Repellat voluptatem
+          eos quo?
+        </p>
+      </section>
+      <section id="project-1" class="section">
+        <h2>Project-1</h2>
+        <img
+          src="https://fastly.picsum.photos/id/77/536/354.jpg?hmac=r83MBRIvemU-UJ2sAvzMiQRWHI8F81DOmHIBWZyMhdY"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil in
+          esse temporibus iure repellat qui, nesciunt sed. Ea ducimus suscipit
+          quam debitis obcaecati tenetur minus, accusantium quibusdam dolor ad
+          fugiat voluptates, eveniet minima quas laboriosam id recusandae labore
+          iure, dolores nisi odio amet quis hic architecto. Repellat voluptatem
+          eos quo?
+        </p>
+      </section>
+      <section id="project-2" class="section">
+        <h2>Project-2</h2>
+        <img
+          src="https://fastly.picsum.photos/id/77/536/354.jpg?hmac=r83MBRIvemU-UJ2sAvzMiQRWHI8F81DOmHIBWZyMhdY"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil in
+          esse temporibus iure repellat qui, nesciunt sed. Ea ducimus suscipit
+          quam debitis obcaecati tenetur minus, accusantium quibusdam dolor ad
+          fugiat voluptates, eveniet minima quas laboriosam id recusandae labore
+          iure, dolores nisi odio amet quis hic architecto. Repellat voluptatem
+          eos quo?
+        </p>
+      </section>
+      <section id="project-3" class="section">
+        <h2>Project-3</h2>
+        <img
+          src="https://fastly.picsum.photos/id/77/536/354.jpg?hmac=r83MBRIvemU-UJ2sAvzMiQRWHI8F81DOmHIBWZyMhdY"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil in
+          esse temporibus iure repellat qui, nesciunt sed. Ea ducimus suscipit
+          quam debitis obcaecati tenetur minus, accusantium quibusdam dolor ad
+          fugiat voluptates, eveniet minima quas laboriosam id recusandae labore
+          iure, dolores nisi odio amet quis hic architecto. Repellat voluptatem
+          eos quo?
+        </p>
+      </section>
+      <section id="project-4" class="section">
+        <h2>Project-4</h2>
+        <img
+          src="https://fastly.picsum.photos/id/77/536/354.jpg?hmac=r83MBRIvemU-UJ2sAvzMiQRWHI8F81DOmHIBWZyMhdY"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil in
+          esse temporibus iure repellat qui, nesciunt sed. Ea ducimus suscipit
+          quam debitis obcaecati tenetur minus, accusantium quibusdam dolor ad
+          fugiat voluptates, eveniet minima quas laboriosam id recusandae labore
+          iure, dolores nisi odio amet quis hic architecto. Repellat voluptatem
+          eos quo?
+        </p>
+      </section>
+    </main>
+    <script>
+      document.getElementById("DomContentLoaded", function () {
+        const header = document.querySelector(".header");
+        function toggleHeaderTransparency() {
+          if (window.scrollY > 0) {
+            header.classList.add("transparent");
+          } else {
+            header.classList.remove("transparent");
+          }
+        }
+        window.addEventListener("scroll", toggleHeaderTransparency);
+      });
+    </script>
+  </body>
+</html>
