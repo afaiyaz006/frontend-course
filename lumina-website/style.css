@@ -167,6 +167,45 @@ body {
   width: 100%;
   border-radius: 10px;
 }
+
+.contact {
+  padding: 3rem 0 4rem;
+}
+.contact p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.form-group {
+  margin: 2rem 0;
+}
+.contact input,
+.contact textarea {
+  border: none;
+  border-bottom: 1px #333 solid;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding-bottom: 1rem;
+}
+.contact textarea {
+  height: 200px;
+}
+.contact input:focus,
+textarea:focus {
+  outline: 0;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid #333;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+.contact button {
+  width: 100%;
+}
 @media (max-width: 768px) {
   .header .header-flex,
   .services,
