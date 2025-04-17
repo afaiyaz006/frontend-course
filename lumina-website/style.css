@@ -9,10 +9,12 @@ body {
 :root {
   --primary-color: #f7ffab;
   --dark-color: #333;
+  --white-text: white;
   --container-normal: 1100px;
   --container-wide: 1400px;
   --container-narrow: 768px;
 }
+
 .section-heading {
   font-size: 1.6rem;
   text-align: center;
@@ -57,7 +59,7 @@ body {
 }
 .bg-dark {
   background: var(--dark-color);
-  color: white;
+  color: var(--white-text);
 }
 
 .bg-dark .bg-primary {
