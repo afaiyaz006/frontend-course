@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "bar bar bar"
+    "leftbar content rightbar"
+    "footer footer footer";
+  max-width: 1000px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+header {
+  grid-area: bar;
+}
+.left-bar {
+  grid-area: leftbar;
+}
+.content {
+  grid-area: content;
+}
+.right-bar {
+  grid-area: rightbar;
+}
+.footer {
+  grid-area: footer;
+}
