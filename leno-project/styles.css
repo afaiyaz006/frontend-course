@@ -450,6 +450,85 @@ img {
   gap: 1.5rem;
   justify-content: center;
 }
+/*Inner header*/
+.inner-header {
+  background: #000 url("./images/header-background.jpg") center center/cover
+    no-repeat;
+  padding: 10rem 2rem 6rem;
+}
+/*pricing*/
+.pricing {
+  background: var(--tertiary-color);
+  padding: 4rem 2rem 6rem;
+}
+.pricing__title {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.pricing__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+.pricing__card-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
+.pricing__card-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.pricing__card-price {
+  font-size: 3rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.pricing__card-list {
+  text-align: left;
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+.pricing__card-item i {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+}
+.appealing__texts {
+  list-style: none;
+  text-align: center;
+  padding: 3rem;
+}
+.features__title-text {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+.features__list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.features__list-item {
+  background-color: #424147;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  border-radius: 25px;
+}
+.feature__list-item-info-title {
+  margin-bottom: 2px;
+}
+.rocket {
+  color: var(--primary-color);
+}
 /*animation*/
 @keyframes pulse-border {
   0% {
@@ -521,5 +600,12 @@ img {
   .footer__container {
     font-size: 1rem;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .pricing__cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .pricing__card-box {
+    margin-top: 5rem;
   }
 }
