@@ -514,6 +514,9 @@ p {
     flex-direction: column;
     padding-bottom: 4rem;
   }
+  .hero-flex {
+    flex-direction: column;
+  }
   .hero img {
     max-width: 50%;
     margin-right: 0;
@@ -562,9 +565,13 @@ p {
     padding-bottom: 4rem;
     font-size: small;
   }
+  .hero-flex {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   .hero img {
-    max-width: 50%;
-    margin-right: 0;
+    max-width: 80%;
+    margin-left: 3rem;
   }
   .hero h1 {
     font-size: 3rem;
