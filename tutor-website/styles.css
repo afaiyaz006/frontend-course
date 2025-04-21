@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --primary-color: #ffc05a;
   --background-color: #fc596a;
@@ -106,7 +109,7 @@ body {
   padding-bottom: 8rem;
 }
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -119,7 +122,7 @@ body {
   font-weight: 400;
 }
 .hero img {
-  max-width: 400px;
+  max-width: 600px;
   width: 100%;
   margin-right: -100px;
 }
@@ -242,7 +245,7 @@ body {
 }
 .course-summary .list-item {
   padding: 1.5rem 0;
-  border-bottom: 1rem solid #f1f1f1;
+  border-bottom: 0.3rem solid #f1f1f1;
 }
 
 .heading-border {
@@ -618,6 +621,9 @@ p {
 }
 
 @media (max-width: 992px) {
+  .navbar {
+    padding-top: 0;
+  }
   .navbar-flex {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
