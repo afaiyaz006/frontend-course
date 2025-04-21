@@ -119,6 +119,7 @@ body {
   font-weight: 400;
 }
 .hero img {
+  max-width: 400px;
   width: 100%;
   margin-right: -100px;
 }
@@ -380,6 +381,7 @@ body {
   text-align: center;
   gap: 1.5rem;
   font-size: larger;
+  padding: 3rem;
   margin: 0 auto;
 }
 .newsletter input {
@@ -390,6 +392,10 @@ body {
   padding: 10px;
   font-size: 18px;
   border-width: 1px;
+}
+.newsletter input:focus {
+  border-color: orange;
+  outline: none;
 }
 .newsletter h2 {
   font-size: x-large;
@@ -482,6 +488,21 @@ body {
 p {
   margin-bottom: 1rem;
 }
+/*social section*/
+.social-flex {
+  font-size: larger;
+  text-align: center;
+}
+.social-icons {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+}
+.social-icons a {
+  font-size: 32px;
+}
+
 /*Learn section*/
 .learn {
   padding: 1.5rem;
@@ -489,6 +510,11 @@ p {
 @media (max-width: 512px) {
   .topics {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .newsletter input {
+    width: 35px;
+    height: 10px;
+    font-size: smaller;
   }
 }
 @media (max-width: 768px) {
@@ -574,6 +600,12 @@ p {
   .info-left {
     display: none;
   }
+  /*newsletter*/
+  .newsletter input {
+    width: 90px;
+    height: 50px;
+    font-size: small;
+  }
 
   /*detail/author*/
   .detail-flex {
@@ -581,6 +613,7 @@ p {
   }
   .footer {
     font-size: 0.6rem;
+    flex-direction: column;
   }
 }
 
@@ -615,6 +648,12 @@ p {
   }
   .topics {
     grid-template-columns: repeat(2, 1fr);
+  }
+  /*newsletter*/
+  .newsletter input {
+    width: 300px;
+    height: 50px;
+    font-size: small;
   }
   /*Chapter cards*/
   .chapter-cards {
@@ -651,7 +690,18 @@ p {
   .social a {
     font-size: 1.5rem;
   }
+  /* .social-flex {
+    font-size: large;
+    text-align: center;
+  } */
+  .social-flex {
+    font-size: large;
+  }
   .footer {
     font-size: 0.8rem;
+  }
+
+  .footer-flex {
+    flex-direction: column;
   }
 }
