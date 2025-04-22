@@ -7,7 +7,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 :root {
-  --primary-color: #f7ffab;
+  --primary-color: #f2f5da;
   --dark-color: #333;
   --white-text: white;
   --container-normal: 1100px;
@@ -73,7 +73,7 @@ body {
   font-weight: bold;
 }
 .hero {
-  height: 500px;
+  height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +84,7 @@ body {
   font-size: 3rem;
   line-height: 1.4;
   font-weight: normal;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
 }
 .gallery-flex {
   display: flex;
@@ -92,9 +92,13 @@ body {
   flex-wrap: wrap;
   gap: 20px;
 }
-
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
 .gallery-item {
-  width: calc(50% - 20px);
+  /* width: calc(50% - 20px); */
   border-radius: 10px;
 }
 
@@ -115,6 +119,10 @@ body {
   border-top: 1px solid #aaa;
   padding: 2rem 1.5rem;
   margin-top: 2rem;
+  font-size: large;
+}
+.contact ul {
+  list-style: none;
 }
 .footer .footer-flex {
   display: flex;
@@ -142,7 +150,8 @@ body {
 
 .services-flex {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
+  padding-left: 1rem;
 }
 .service-item h4 {
   font-size: 1.1rem;
@@ -161,7 +170,13 @@ body {
   flex-wrap: wrap;
 }
 .team-item {
-  width: 25%;
+  max-width: 100%;
+}
+.section-heading {
+  margin: 2rem;
+}
+.team-item img {
+  width: 410px;
 }
 .team-logo {
   width: 100%;
@@ -206,6 +221,13 @@ textarea:focus {
 .contact button {
   width: 100%;
 }
+.contact h1 {
+  font-size: large;
+}
+.social a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
 @media (max-width: 768px) {
   .header .header-flex,
   .services,
@@ -225,5 +247,13 @@ textarea:focus {
     font-size: 1.2rem;
 
     gap: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-item {
+    width: 150px;
   }
 }

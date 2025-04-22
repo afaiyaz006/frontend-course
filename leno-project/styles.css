@@ -350,10 +350,10 @@ img {
   align-items: center;
   justify-content: center;
   padding: 0rem 1rem;
-  font-size: small;
+  font-size: large;
   text-align: center;
-  width: 100px;
-  height: 30px;
+  width: 120px;
+  height: 50px;
 }
 .details__grid-heading {
   font-size: 2rem;
@@ -606,7 +606,8 @@ img {
   }
   .details__grid {
     grid-template-columns: repeat(1, 1fr);
-    max-width: 350px;
+    max-width: 600px;
+    padding-left: 1rem;
   }
   .details__icons {
     flex-direction: column;
