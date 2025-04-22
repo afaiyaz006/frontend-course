@@ -492,10 +492,16 @@ img {
 }
 .pricing__cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
   gap: 2rem;
+}
+.pricing__card {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
 }
 .pricing__card-box {
   background: rgba(255, 255, 255, 0.1);
@@ -522,11 +528,19 @@ img {
   color: var(--primary-color);
   margin-right: 0.5rem;
 }
+.pricing__card-button {
+  font-size: medium;
+  padding: 0.5rem 0.5rem;
+  width: 156px;
+  height: 40px;
+}
 .appealing__texts {
   list-style: none;
   text-align: center;
   padding: 3rem;
+  font-weight: lighter;
 }
+
 .features__title-text {
   text-align: center;
   font-size: 32px;
@@ -540,17 +554,27 @@ img {
 }
 .features__list-item {
   background-color: #424147;
-  padding: 1.5rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 2.5rem;
   border-radius: 25px;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.features__list-item i {
+  color: var(--primary-color);
 }
 .feature__list-item-info-title {
   margin-bottom: 2px;
 }
 .rocket {
   color: var(--primary-color);
+  height: 50px;
 }
 /*animation*/
 @keyframes pulse-border {
@@ -646,5 +670,9 @@ img {
   }
   .navbar__mobile-menu {
     display: block;
+  }
+  .features__list-item {
+    flex-direction: column;
+    text-align: center;
   }
 }

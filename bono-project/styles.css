@@ -119,6 +119,8 @@ header .header-right a:hover {
   header .header-right {
     flex-direction: column;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
   }
   .main-content {
     flex-direction: column-reverse;
