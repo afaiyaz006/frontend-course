@@ -9,8 +9,6 @@ toggleBtn.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll", () => {
-  console.log(window.scrollY);
-  console.log(navbar);
   if (window.scrollY > 0) {
     navbar.classList.add("navbar-scroll");
   } else {
