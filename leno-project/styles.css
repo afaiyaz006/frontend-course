@@ -131,7 +131,7 @@ img {
   gap: 2rem;
 }
 .hero__content {
-  max-width: 350px;
+  max-width: 500px;
 }
 .hero__title {
   font-size: 3.5rem;
@@ -143,8 +143,19 @@ img {
   font-size: 1.2rem;
   line-height: 1.6;
 }
+.hero__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.3rem;
+}
 .hero__image img {
   max-width: 500px;
+}
+.hero__title--primary {
+  color: var(--primary-color);
 }
 /*Global Button*/
 .btn {
@@ -154,8 +165,8 @@ img {
   background: var(--primary-color);
   border: 2px solid transparent;
   font-weight: 600;
-  max-width: 290px;
-  max-height: 60px;
+  /* max-width: 290px;
+  max-height: 60px; */
   font-size: small;
   border-radius: 50px;
   transition: background-color 0.3s ease;
@@ -165,17 +176,10 @@ img {
   background-color: var(--secondary-color);
   border-color: var(--primary-color);
 }
-.hero__button {
+/* .hero__button {
   margin-top: 2rem;
-}
-.hero__buttons {
-  /* display: flex; */
-  display: flex;
-  /* align-items: center;
-  justify-content: center; */
-  gap: 1.5rem;
-  /* margin: 2rem auto;*/
-}
+} */
+
 .testimonials {
   padding: 4rem 2rem;
   text-align: center;
@@ -231,6 +235,8 @@ img {
 }
 .features__grid-item {
   display: flex;
+  /* flex-direction: row-reverse; */
+  gap: 1.5rem;
   align-items: start;
   justify-content: start;
   text-align: left;
@@ -624,6 +630,10 @@ img {
 @media (max-width: 992px) {
   .features__grid {
     grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .features__grid-column {
+    gap: 2rem;
   }
   .features__title {
     font-size: larger;
@@ -674,5 +684,27 @@ img {
   .features__list-item {
     flex-direction: column;
     text-align: center;
+  }
+  .hero__buttons {
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+  .features__grid-item {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .features__grid-column-left {
+    order: 1;
+  }
+  .features__grid-column-right {
+    order: 2;
+  }
+  .features-grid-column-center {
+    order: 3;
+  }
+  .features__grid-column-right .features__grid-item {
+    flex-direction: column;
   }
 }
