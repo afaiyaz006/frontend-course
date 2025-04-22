@@ -288,7 +288,7 @@ img {
   display: block;
   box-sizing: content-box;
   width: 2rem;
-  height: 2.75rem;
+  height: 2rem;
   border-radius: 50%;
   cursor: pointer;
   padding: 1.25rem 1.25rem 1.75rem;
@@ -302,8 +302,8 @@ img {
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
   background: #00c9db;
-  height: 4.375rem;
-  width: 4.375rem;
+  height: 5.3rem;
+  width: 5.3rem;
   border-radius: 50%;
   display: block;
   transition: all 200ms;
