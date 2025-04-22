@@ -278,12 +278,35 @@
             <div class="preview__image-container">
               <div class="preview__video-wrapper">
                 <img src="./images/video-frame.jpg" alt="" />
-                <button class="preview__video-play-button">
+                <button
+                  class="preview__video-play-button"
+                  onclick="document.querySelector('dialog').showModal()"
+                >
                   <!-- <span class="preview__video-play-button"></span> -->
                   <span></span>
                 </button>
               </div>
             </div>
+            <dialog>
+              <div class="video__modal">
+                <button
+                  class="video__model-close-button"
+                  onclick="this.closest('dialog').close()"
+                >
+                  ✖
+                </button>
+                <div class="video__modal-content">
+                  <iframe
+                    src="https://www.youtube.com/embed/8sXRyHI3bLw"
+                    frameborder="0"
+                    id="videoPlayer"
+                    width="560"
+                    height="315"
+                    allowfullscreen=""
+                  ></iframe>
+                </div>
+              </div>
+            </dialog>
           </div>
         </div>
       </section>
