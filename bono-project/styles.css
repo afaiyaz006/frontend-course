@@ -19,7 +19,7 @@ body {
       rgba(71, 17, 116, 0.9)
     ),
     url("./images/background.jpg") no-repeat center center;
-  background-attachment: fixed;
+  padding: 1rem;
 }
 
 header {
@@ -42,7 +42,9 @@ header .header-right i {
 header .header-right a:hover {
   color: purple;
 }
-
+.header-right a {
+  color: white;
+}
 .main-content {
   display: flex;
   gap: 50px;
@@ -58,8 +60,11 @@ header .header-right a:hover {
 }
 .main-content h1 {
   font-size: 40px;
-  text-align: center;
+  text-align: left;
   line-height: 1.4;
+}
+.main-content p {
+  text-align: left;
 }
 .main-content .text-container {
   flex: 1;
