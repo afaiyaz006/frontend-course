@@ -619,6 +619,10 @@ p {
   /*detail/author*/
   .detail-flex {
     flex-direction: column;
+    padding: 2rem;
+  }
+  #author .detail-flex {
+    flex-direction: column-reverse;
   }
   .footer {
     font-size: 0.6rem;
@@ -661,6 +665,7 @@ p {
   .topics {
     grid-template-columns: repeat(2, 1fr);
   }
+
   /*newsletter*/
   .newsletter input {
     width: 300px;
@@ -694,11 +699,13 @@ p {
     flex-direction: column;
   }
   /*Author Details*/
-  .detail-flex {
+  #author .detail-flex {
     flex-direction: column-reverse;
-    padding: 2rem;
   }
-
+  /*Section list*/
+  .section-lists {
+    padding: 3rem 3rem;
+  }
   .social a {
     font-size: 1.5rem;
   }
@@ -706,11 +713,20 @@ p {
     font-size: large;
     text-align: center;
   } */
-  .social-flex {
-    font-size: medium;
+  .social-flex p {
+    font-size: large;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .social-icons {
     font-size: medium;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .social-icons i {
+    font-size: 32px;
+    color: white;
   }
   .footer {
     font-size: 0.8rem;
