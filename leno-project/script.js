@@ -4,11 +4,9 @@ const navbar = document.querySelector(".navbar");
 const dialog = document.querySelector("dialog");
 // console.log(toggleBtn);
 // console.log(mobileMenu);
-console.log(navbar);
+// console.log(navbar);
 
 toggleBtn.addEventListener("click", () => {
-  //   toggleBtn.classList.toggle("open");
-
   mobileMenu.classList.toggle("show");
 });
 
