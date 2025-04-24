@@ -140,7 +140,7 @@ body {
 }
 .btn {
   display: inline-block;
-  padding: 1.6rem 2.6rem;
+  padding: 1.3rem 2.3rem;
   border: 1px solid var(--primary-color);
   border-radius: 32px;
   background-color: var(--primary-color);
@@ -361,14 +361,14 @@ body {
 }
 .stats img {
   width: 100%;
-  max-width: 900px;
+  max-width: 500px;
 }
 .stats-content {
-  max-width: 800px;
+  max-width: 500px;
 }
 .stats .stats-numbers {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   margin: 2rem 0;
   text-align: center;
   justify-content: center;
@@ -377,17 +377,22 @@ body {
 }
 .stats h3 {
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 700;
+}
+.stats-text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 .stats p {
   margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
 }
+
 .stats .btn {
   display: block;
   text-align: center;
   margin: 0 auto;
-  width: 250px;
+  width: 200px;
 }
 .newsletter {
   display: flex;
@@ -395,26 +400,32 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 1.5rem;
+  gap: 1rem;
   font-size: larger;
-  padding: 3rem;
+  padding: 5rem;
   margin: 0 auto;
 }
 .newsletter input {
+  padding: 1rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 32px;
   width: 100%;
-  max-width: 30rem;
-  height: 3.5rem;
-  border-radius: 80px;
-  padding: 10px;
-  font-size: 18px;
-  border-width: 1px;
+  max-width: 450px;
+  margin: 1rem 0;
 }
 .newsletter input:focus {
-  border-color: orange;
+  border-color: black;
   outline: none;
 }
 .newsletter h2 {
-  font-size: x-large;
+  font-size: 1.5rem;
+}
+.newsletter p {
+  max-width: 600px;
+}
+.newsletter-btn {
+  padding: 1rem 2rem;
+  font-size: small;
 }
 /*social*/
 .social {
@@ -565,6 +576,13 @@ p {
   overflow: hidden;
   max-width: 100%;
 }
+
+/* .newsletter-section__input {
+  max-width: 400px;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  width: 100%;
+} */
 @media (max-width: 512px) {
   .topics {
     grid-template-columns: repeat(1, 1fr);
@@ -573,6 +591,11 @@ p {
     width: 35px;
     height: 10px;
     font-size: smaller;
+  }
+}
+@media (max-width: 576px) {
+  .footer-flex {
+    flex-direction: column;
   }
 }
 @media (max-width: 768px) {
@@ -661,18 +684,21 @@ p {
   }
   /*newsletter*/
   .newsletter input {
-    width: 90px;
+    width: 80px;
     height: 50px;
     font-size: small;
   }
-
-  /*detail/author*/
-  .detail-flex {
-    flex-direction: column;
-    padding: 2rem;
+  .newsletter-btn {
+    font-size: smaller;
   }
+  .newsletter p {
+    display: none;
+  }
+  /*detail/author*/
+
   #author .detail-flex {
     flex-direction: column-reverse;
+    padding: 2rem;
   }
   .footer {
     font-size: 0.6rem;
@@ -697,6 +723,9 @@ p {
     font-size: 1rem;
     font-weight: 200;
   }
+  .hero {
+    text-align: center;
+  }
   .hero .hero-flex {
     text-align: center;
     gap: 2rem;
@@ -709,8 +738,8 @@ p {
     flex-wrap: wrap;
   }
   .hero img {
-    max-width: 80%;
-    margin-left: 3rem;
+    max-width: 600px;
+    margin-right: -9rem;
   }
   .hero h1 {
     font-size: 2.5rem;
@@ -755,6 +784,10 @@ p {
     flex-direction: column;
   }
   /*Author Details*/
+  #curriculams .detail-flex {
+    flex-direction: column;
+    padding: 2rem;
+  }
   #author .detail-flex {
     flex-direction: column-reverse;
   }
@@ -788,11 +821,11 @@ p {
     font-size: 0.8rem;
   }
 
-  .footer-flex {
+  /* .footer-flex {
     flex-direction: row;
     padding: 0.5rem 2rem;
     align-items: center;
-  }
+  } */
   /* .contact-form {
     max-width: 500px;
     padding: 4rem;
