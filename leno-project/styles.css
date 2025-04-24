@@ -762,6 +762,8 @@ dialog {
   .features__list-item {
     flex-direction: column;
     text-align: center;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
   .hero__buttons {
     margin-top: 1.5rem;
