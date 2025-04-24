@@ -31,7 +31,7 @@ body {
 .inner-heading {
   background-color: #fc5d66;
   /* margin-top: 60px; */
-  max-height: 250px;
+  height: 250px;
   color: white;
   padding-top: 8rem;
   font-size: larger;
