@@ -29,7 +29,7 @@ body {
 .inner-heading {
   background-color: #fc5d66;
   /* margin-top: 60px; */
-  height: 250px;
+  max-height: 250px;
   color: white;
   padding-top: 8rem;
   font-size: larger;
@@ -366,7 +366,7 @@ body {
 .stats-content {
   max-width: 500px;
 }
-.stats .stats-numbers {
+.stats {
   display: flex;
   gap: 1rem;
   margin: 2rem 0;
@@ -374,6 +374,15 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+.stats-numbers {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .stats h3 {
   font-size: 3rem;
@@ -662,6 +671,10 @@ p {
   .topics {
     grid-template-columns: repeat(1, 1fr);
   }
+  /*Stats*/
+  .stats-numbers {
+    flex-direction: column;
+  }
   /*Chapter cards*/
   .chapter-cards {
     grid-template-columns: repeat(1, 1fr);
@@ -783,6 +796,7 @@ p {
   .stats-flex {
     flex-direction: column;
   }
+
   /*Author Details*/
   #curriculams .detail-flex {
     flex-direction: column;
@@ -820,7 +834,9 @@ p {
   .footer {
     font-size: 0.8rem;
   }
-
+  .stats-numbers {
+    flex-wrap: wrap;
+  }
   /* .footer-flex {
     flex-direction: row;
     padding: 0.5rem 2rem;
