@@ -252,8 +252,21 @@ textarea:focus {
     flex-direction: column;
     align-items: center;
   }
+  .service-item {
+    margin: 0 2rem;
+  }
   .hero h2 {
-    font-size: 1.8rem;
+    display: block;
+    font-size: 1.6em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    unicode-bidi: isolate;
+  }
+  .hero {
+    height: 300px;
   }
 
   .navbar ul {
