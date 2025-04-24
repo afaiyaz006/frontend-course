@@ -5,6 +5,7 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
 }
 :root {
   --primary-color: #fcf5e9;
@@ -12,9 +13,11 @@ body {
   --white-text: white;
   --container-normal: 1100px;
   --container-wide: 1400px;
-  --container-narrow: 768px;
+  --container-narrow: 900px;
 }
-
+.header {
+  margin: 1.5rem auto;
+}
 .section-heading {
   font-size: 1.6rem;
   text-align: center;
@@ -22,14 +25,14 @@ body {
 .container {
   max-width: var(--container-normal);
   margin: 0 auto;
-  padding: 30px 30px;
 }
 .container-sm {
   max-width: var(--container-narrow);
-  margin: 0 auto;
+  padding: 0 2.5rem;
 }
 .container-lg {
   max-width: var(--container-wide);
+  padding: 0 2.5rem;
 }
 .header-flex {
   display: flex;
@@ -47,8 +50,8 @@ body {
 }
 .navbar ul a {
   text-decoration: none;
-  font-size: larger;
-  color: black;
+  font-size: medium;
+  color: var(--dark-color);
 }
 .header .navbar a {
   padding: 0.5rem 1rem;
@@ -73,7 +76,7 @@ body {
   font-weight: bold;
 }
 .hero {
-  height: 280px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +87,6 @@ body {
   font-size: 3rem;
   line-height: 1.4;
   font-weight: normal;
-  font-size: 2.1rem;
 }
 .gallery-flex {
   display: flex;
@@ -96,6 +98,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 .gallery-item {
   /* width: calc(50% - 20px); */
@@ -124,6 +128,11 @@ body {
 .contact ul {
   list-style: none;
 }
+.contact h2,
+.contact p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 .footer .footer-flex {
   display: flex;
   justify-content: space-between;
@@ -143,21 +152,26 @@ body {
 }
 
 .services {
-  background: rgb(26, 25, 25);
+  background: var(--dark-color);
   color: #fff;
   padding: 3rem 0 4rem;
 }
 
 .services-flex {
   display: flex;
-  gap: 1.5rem;
-  padding-left: 1rem;
+  gap: 2rem;
+
+  margin: 0 auto;
 }
+
 .service-item h4 {
   font-size: 1.1rem;
   margin-bottom: 0.7rem;
 }
-
+.service-item {
+  flex: 1;
+  min-width: 250px;
+}
 .team {
   padding: 0rem 0 4rem;
 }
@@ -168,12 +182,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 .team-item {
   max-width: 100%;
 }
 .section-heading {
-  margin: 2rem;
+  margin: 2rem auto;
 }
 .team-item img {
   width: 410px;
@@ -237,6 +252,10 @@ textarea:focus {
     flex-direction: column;
     align-items: center;
   }
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
   .navbar ul {
     align-items: center;
     padding-top: 1rem;
