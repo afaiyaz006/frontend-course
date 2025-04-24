@@ -520,6 +520,10 @@ body {
 .contact-form p {
   margin-bottom: 3rem;
 }
+.contact .btn {
+  margin: 0 auto;
+  width: 200px;
+}
 /*office location*/
 .office-location {
   display: block;
