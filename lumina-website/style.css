@@ -235,6 +235,10 @@ textarea:focus {
   font-size: inherit;
   cursor: pointer;
 }
+.btn:hover {
+  background: var(--dark-color);
+  color: var(--primary-color);
+}
 .contact button {
   width: 100%;
 }
