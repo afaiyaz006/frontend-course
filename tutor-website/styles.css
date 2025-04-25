@@ -753,9 +753,14 @@ p {
     flex-direction: column;
   }
   /*Takeaway cards*/
+  .takeaways-cards {
+    margin: 1rem 0;
+  }
   .takeaways-cards .card {
     flex-direction: row;
-    padding: 1rem;
+    padding: 2rem 1rem;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -817,9 +822,9 @@ p {
     padding-right: 1.5rem;
   }
   /*Takeaways*/
-  .takeaways p {
+  /* .takeaways p {
     padding: 1.5rem;
-  }
+  } */
   /* .takeaways-cards {
     height: 200px;
   } */
