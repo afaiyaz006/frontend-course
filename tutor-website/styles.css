@@ -246,6 +246,9 @@ body {
   flex-direction: column;
   padding: 0 10px;
 }
+.course-summary {
+  margin-bottom: 5rem;
+}
 
 .course-summary .section-heading {
   text-align: center;
@@ -269,7 +272,7 @@ body {
 }
 .course-summary .list-item {
   padding: 1.5rem 0;
-  border-bottom: 0.3rem solid #f1f1f1;
+  border-bottom: 0.1rem solid #f1f1f1;
 }
 
 .heading-border {
@@ -796,6 +799,7 @@ p {
   } */
   .hero p {
     font-size: 1.2rem;
+    text-align: left;
   }
   .topics {
     grid-template-columns: repeat(2, 1fr);
