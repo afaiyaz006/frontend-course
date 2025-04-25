@@ -11,6 +11,7 @@ html {
 :root {
   --primary-color: #ffc05a;
   --background-color: #fc596a;
+  --dark-color: #272d35;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -149,12 +150,13 @@ body {
   color: dark;
   cursor: pointer;
   transition: all 0.2s;
-}
-
-.btn {
   text-decoration: none;
-  color: black;
+  color: #333;
 }
+/* 
+.btn {
+
+} */
 .btn:hover {
   background: var(--background-color);
   color: white;
@@ -170,7 +172,7 @@ body {
 /*Section gallery*/
 .section-header {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 750px;
   text-align: center;
   margin-bottom: 3.5rem;
 }
@@ -185,6 +187,10 @@ body {
   margin-bottom: 20px;
   font-size: 1.3rem;
   color: black;
+}
+.heading-paragraph {
+  margin: 0 auto;
+  max-width: 760px;
 }
 .heading-border {
   width: 64px;
@@ -228,7 +234,10 @@ body {
   align-items: center;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
 }
-
+.chapter-cards .card h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 /*section course summary*/
 .course-summary .container {
   display: flex;
@@ -271,12 +280,16 @@ body {
 .info-container {
   background: url("./images/audience.jpg") top center/cover no-repeat;
   display: flex;
+  margin-top: 2rem;
 }
 .info-content {
   background-color: var(--background-color);
   color: #fff;
   flex: 1;
   padding: 4rem;
+}
+.info-content ul i {
+  color: #ffc05a;
 }
 .info-left {
   width: 50%;
@@ -296,7 +309,7 @@ body {
   line-height: 2;
 }
 .info-content i {
-  margin-right: 30px;
+  margin-right: 15px;
 }
 /*Text classes*/
 .text-primary {
@@ -310,13 +323,17 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding: 1.5rem 0;
+  padding: 1.5rem auto;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
 .takeaways-cards .card {
   flex-direction: row;
-  padding: 1.5rem;
+  padding: 1.2rem;
+}
+.takeaways-cards .card p {
+  margin-left: 1.2rem;
+  text-align: left;
 }
 /*course/author info*/
 .details .detail-flex {
@@ -347,6 +364,10 @@ body {
 .details .container img {
   width: 100%;
   max-width: 500px;
+}
+.details h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
 }
 /*Stats*/
 .stats {
@@ -434,10 +455,11 @@ body {
 .newsletter p {
   max-width: 600px;
 }
-.newsletter-btn {
+/* .newsletter-btn {
+  display: inline-block;
   padding: 1rem 2rem;
   font-size: small;
-}
+} */
 /*social*/
 .social {
   background-color: #272d35;
@@ -522,7 +544,7 @@ body {
 }
 .contact .btn {
   margin: 0 auto;
-  width: 200px;
+  max-width: 200px;
 }
 /*office location*/
 .office-location {
@@ -603,7 +625,6 @@ p {
     grid-template-columns: repeat(1, 1fr);
   }
   .newsletter input {
-    width: 35px;
     height: 10px;
     font-size: smaller;
   }
@@ -685,6 +706,7 @@ p {
   .chapter-cards {
     grid-template-columns: repeat(1, 1fr);
   }
+
   /*info content*/
   .info-container {
     flex-direction: column;
@@ -703,7 +725,6 @@ p {
   }
   /*newsletter*/
   .newsletter input {
-    width: 80px;
     height: 50px;
     font-size: small;
   }
@@ -726,6 +747,11 @@ p {
   .footer-flex {
     flex-direction: column;
   }
+  /*Takeaway cards*/
+  .takeaways-cards .card {
+    flex-direction: row;
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -738,11 +764,14 @@ p {
     margin-top: 1.3rem;
     padding: 1.5rem 1.5rem;
   } */
-  .btn {
+  /* .btn {
     font-size: 1rem;
     font-weight: 200;
-  }
+  } */
   .hero {
+    text-align: center;
+  }
+  .hero h1 {
     text-align: center;
   }
   .hero .hero-flex {
@@ -760,9 +789,9 @@ p {
     max-width: 600px;
     margin-right: -9rem;
   }
-  .hero h1 {
+  /* .hero h1 {
     font-size: 2.5rem;
-  }
+  } */
   .hero p {
     font-size: 1.2rem;
   }
@@ -772,7 +801,6 @@ p {
 
   /*newsletter*/
   .newsletter input {
-    width: 300px;
     height: 50px;
     font-size: small;
   }
