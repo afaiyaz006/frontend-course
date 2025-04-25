@@ -81,7 +81,7 @@ img {
 .navbar__mobile-menu-items {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 1rem;
   width: 100%;
   background: var(--secondary-color);
   opacity: 0.95;
@@ -94,6 +94,7 @@ img {
 }
 .navbar__mobile-menu-items.show {
   transform: translateX(0);
+  left: 0;
 }
 .navbar__mobile-menu {
   display: none;
