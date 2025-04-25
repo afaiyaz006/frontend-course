@@ -638,6 +638,9 @@ p {
   .footer-flex {
     flex-direction: column;
   }
+  .topics {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 @media (max-width: 768px) {
   /*mobile menu related*/
@@ -652,13 +655,14 @@ p {
     padding-top: 10px;
     display: flex;
     z-index: 999;
-    font-size: larger;
+    font-size: x-large;
     flex-direction: column;
     transition: left 0.4s ease-in-out;
     background-color: rgba(0, 0, 0, 0.8);
   }
   .mobile-menu.activate {
     left: 0;
+    padding: 2rem 2rem;
   }
   .mobile-menu-toogle {
     display: block;
@@ -701,6 +705,7 @@ p {
     font-size: 3rem;
   }
   .topics {
+    padding: 1.5rem;
     grid-template-columns: repeat(1, 1fr);
   }
   /*Stats*/
@@ -763,7 +768,13 @@ p {
     justify-content: center;
   }
 }
-
+@media (min-width: 768px) and (max-width: 992px) {
+  /*Topics*/
+  .topics {
+    padding: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 992px) {
   .navbar {
     padding-top: 1rem;
@@ -828,11 +839,7 @@ p {
   /* .takeaways-cards {
     height: 200px;
   } */
-  /*Topics*/
-  .topics {
-    padding: 1.5rem;
-    grid-template-columns: repeat(2, 1fr);
-  }
+
   /**/
   .takeaways-cards {
     grid-template-columns: repeat(1, 1fr);
