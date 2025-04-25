@@ -802,12 +802,12 @@ p {
   /* .hero h1 {
     font-size: 2.5rem;
   } */
-  .hero p {
+  .hero-content p {
     font-size: 1.2rem;
-    text-align: left;
+    text-align: center;
   }
-  .topics {
-    grid-template-columns: repeat(2, 1fr);
+  .hero-content .btn {
+    font-size: large;
   }
 
   /*newsletter*/
@@ -831,7 +831,7 @@ p {
   /*Topics*/
   .topics {
     padding: 1.5rem;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   /**/
   .takeaways-cards {
