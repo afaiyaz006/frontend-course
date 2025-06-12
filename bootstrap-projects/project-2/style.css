@@ -1,0 +1,33 @@
+.brand-gradient {
+  background: #20cf2c;
+  background: linear-gradient(to right, #20cf2c 0%, #2bc4cf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-holder,
+.main-page-header {
+  background-image: url(images/pexels-pixabay-147411.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.5rem;
+  height: 40px; /* Set consistent height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-toggler-icon {
+  width: 24px;
+  height: 24px;
+}
+.custom-nav {
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* for Safari support */
+}
