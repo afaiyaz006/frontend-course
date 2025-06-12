@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structured Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      .navbar-nav .nav-link {
+        margin-right: 1rem;
+      }
+      .form-control:focus {
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <!-- ====================== Header/Navbar Section ====================== -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white border-bottom px-5"
+      >
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="images/logo.svg" alt="Logo" width="135" class="me-2" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+
+          <a class="btn btn-warning me-2" href="#">
+            <i class="bi bi-box-arrow-in-right me-1"></i>Login
+          </a>
+          <a class="btn btn-danger" href="#">
+            <i class="bi bi-person-plus-fill me-2"></i>Sign-up for Free
+          </a>
+
+          <form class="d-flex ms-2">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search for.."
+              aria-label="Search"
+            />
+            <button class="btn btn-success" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ====================== Hero Section ====================== -->
+    <section class="container py-5 border-bottom">
+      <div class="row align-items-center">
+        <!-- Text Column -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h2 class="fw-semibold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            alias nulla minus sunt similique
+          </h2>
+          <p class="text-muted mt-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consectetur, debitis mollitia laudantium tenetur, tempora obcaecati
+            provident voluptatum
+          </p>
+          <a href="#" class="btn btn-success mt-3">
+            <i class="bi bi-person-plus-fill me-1"></i>
+            Sign-up to Get Started
+          </a>
+        </div>
+
+        <!-- Image Column -->
+        <div class="col-md-6 text-center">
+          <img
+            src="images/hero-image.jpg"
+            alt="Hero"
+            class="img-fluid rounded"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== Features Section ====================== -->
+    <section class="container py-5 border-bottom">
+      <!-- Flex container: single row, no wrap -->
+      <div class="d-flex justify-content-between card-row">
+        <!-- Card 1 -->
+        <div
+          class="card border shadow-sm text-center flex-grow-1 mx-2 card-fixed"
+        >
+          <div class="card-body">
+            <img src="images/icon1.png" alt="Icon 1" width="48" class="mb-3" />
+            <h5 class="card-title fw-semibold">Lorem ipsum dolor sit amet</h5>
+            <p class="card-text text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              officiis modi similique nihil
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="card border shadow-sm text-center flex-grow-1 mx-2 card-fixed"
+        >
+          <div class="card-body">
+            <img src="images/icon2.png" alt="Icon 2" width="48" class="mb-3" />
+            <h5 class="card-title fw-semibold">Lorem ipsum dolor sit amet</h5>
+            <p class="card-text text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              officiis modi similique nihil
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="card border shadow-sm text-center flex-grow-1 mx-2 card-fixed"
+        >
+          <div class="card-body">
+            <img src="images/icon3.png" alt="Icon 3" width="48" class="mb-3" />
+            <h5 class="card-title fw-semibold">Lorem ipsum dolor sit amet</h5>
+            <p class="card-text text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              officiis modi similique nihil
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== Bootstrap JS ====================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
