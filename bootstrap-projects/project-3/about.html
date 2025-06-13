@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .navbar-nav .nav-link {
+        margin-right: 1rem;
+      }
+      .form-control:focus {
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <!-- --- Header/Navbar Section --- -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white border-bottom px-5"
+      >
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="images/logo.svg" alt="Logo" width="135" class="me-2" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+
+          <a class="btn btn-warning me-2" href="#">
+            <i class="bi bi-box-arrow-in-right me-1"></i>Login
+          </a>
+          <a class="btn btn-danger" href="#">
+            <i class="bi bi-person-plus-fill me-2"></i>Sign-up for Free
+          </a>
+
+          <form class="d-flex ms-2">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search for.."
+              aria-label="Search"
+            />
+            <button class="btn btn-success" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ---- Hero Section--- -->
+    <section class="py-5 border-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Text Column -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h2 class="fw-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              alias nulla minus sunt similique
+            </h2>
+            <p class="text-muted mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consectetur, debitis mollitia laudantium tenetur, tempora
+              obcaecati provident voluptatum
+            </p>
+            <a href="#" class="btn btn-success mt-3">
+              <i class="bi bi-person-plus-fill me-1"></i>
+              Sign-up to Get Started
+            </a>
+          </div>
+
+          <!-- Image Column -->
+          <div class="col-md-6 text-center">
+            <img
+              src="images/main-header.jpg"
+              alt="Hero"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--welcome section-->
+    <section class="container py-5 text-center courses">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="course-loop-heading text-md-center mb-4">
+            <h4 class="fs-5">Welcome to prime inspire</h4>
+            <p class="small text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              nostrum omnis ipsum maxime provident. Facilis.
+            </p>
+            <a
+              href="courses.html"
+              class="btn btn-sm btn-success d-inline-flex align-items-center justify-content-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-mortarboard-fill me-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"
+                ></path>
+                <path
+                  d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"
+                ></path>
+              </svg>
+              Read more about our journey
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-page">
+      <div class="container">
+        <div class="row gx-5 align-items-center">
+          <div class="col-md-4">
+            <div class="about-content-image">
+              <img
+                class="rounded img-fluid full-width mb-md-0 mb-3"
+                src="images/main-header.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about-content-holder">
+              <p class="text-secondary small">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+                quidem tenetur dolor doloribus? Quasi inventore provident
+                quaerat, cupiditate quo nostrum unde alias officia dicta dolor
+                eveniet quos nesciunt totam fugit?
+              </p>
+              <p class="text-secondary small">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
+                perferendis tenetur porro suscipit ipsam minima consectetur enim
+                temporibus deserunt iste laborum error accusantium esse pariatur
+                corporis rem! Esse, laborum vitae!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about-content-holder">
+              <p class="text-secondary small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci dolorem quas unde temporibus quos deleniti repellendus
+                amet neque quibusdam, consectetur voluptates fugit laborum
+                distinctio. Sapiente tempore temporibus culpa nam error.
+              </p>
+              <p class="text-secondary small">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+                molestiae illum quisquam labore ipsum, fugit ut repellat
+                doloremque esse consequuntur soluta, voluptatibus voluptates.
+                Reiciendis voluptates corrupti dicta in nostrum commodi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Subscribe-->
+    <section class="subscribe py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="subscribe-heading text-white text-md-end text-center">
+              <h5 class="fs-4 fw-light m-0 mb-md-0 mb-3">
+                Subscribe for newsletters
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <form class="d-flex justify-content-center">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control form-control-sm"
+                  placeholder="Your email"
+                />
+                <button
+                  type="submit"
+                  class="btn btn-sm btn-success d-inline-flex align-items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="me-2 bi bi-envelope-check-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"
+                    ></path>
+                    <path
+                      d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"
+                    ></path>
+                  </svg>
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Main footer-->
+    <footer class="main-footer text-bg-dark py-5 small">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <div class="brand-icon mb-2">
+              <img src="img/Prime-Inspire-Logo-dark.svg" alt="" />
+            </div>
+            <address class="small text-secondary">
+              Sample, Sample, <br />
+              Dhaka, Bangladesh. <br />
+              019382193829
+            </address>
+            <p class="small text-secondary">contact@example.com</p>
+          </div>
+          <div class="col-md-2">
+            <h6>Main Menu</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Link Item</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Link Item</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Link Item</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h6>Misc</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Link Item</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Link Item</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Link Item</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <h6>Follow us</h6>
+            <p>
+              <a
+                href="#"
+                class="btn btn-sm btn-primary rounded-pill px-md-3 d-inline-flex align-items-center mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-facebook me-md-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  ></path>
+                </svg>
+                <span class="d-md-block d-none">Facebook</span>
+              </a>
+              <a
+                href="#"
+                class="btn btn-sm btn-danger rounded-pill px-md-3 d-inline-flex align-items-center mb-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-youtube me-md-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                  ></path>
+                </svg>
+                <span class="d-md-block d-none">YouTube</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Copy right-->
+    <div class="copyright py-4 small">
+      <div class="container">
+        <div class="row text-center text-white justify-content-center">
+          <p class="m-0 small">Copyright © 2025.</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
