@@ -1,0 +1,10 @@
+let a = "red";
+let b = "blue";
+console.log("Red: " + a);
+console.log("Blue: " + b);
+let c = a;
+a = b;
+b = c;
+console.log("---------------------");
+console.log("Red: " + a);
+console.log("Blue: " + b);
