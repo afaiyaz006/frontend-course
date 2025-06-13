@@ -1,6 +1,9 @@
 function move(array, index, offset) {
   const output = [...array];
   const move_position = index + offset;
+  if (move_position > array.length - 1) {
+    throw Error("Invalid position");
+  }
   const removed_element = output.splice(index, 1)[0];
   output.splice(move_position, 0, removed_element);
   return output;
