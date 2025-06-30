@@ -1,0 +1,20 @@
+*{
+    margin: 0 auto;
+}
+
+.square{
+    width:600px;
+    height:360px;
+    background-color: green;
+}
+.circle{
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 52px;
+}
