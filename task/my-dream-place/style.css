@@ -61,11 +61,19 @@ body {
     color: white;
     border: none;
 }
-
+.btn-search{
+     background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 40px
+}
 .btn-signin:hover {
     background-color: #1669c1;
 }
+.btn-search:hover {
+    background-color: #1669c1;
 
+}
 .hero-image {
     background-image: url("./bg-image.png");
     height: 800px;
@@ -129,12 +137,13 @@ body {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
     transition: box-shadow 0.3s ease;
     width: 1000px;
+    height: 64px;
     
 }
 
 .travel-form {
     margin: 0 auto;
-    padding: 10px
+    padding: 10px;
 }
 
 .form-container {
@@ -162,9 +171,9 @@ body {
 
 .input-group input {
     max-width: 200px;
-    padding-left: 25px;
+    padding-left: 28px;
     height: 43px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem
 }
