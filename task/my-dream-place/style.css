@@ -1,0 +1,170 @@
+/* styles.css */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+
+    margin: 0 20px
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px
+}
+
+.nav-menu {
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    gap: 10px
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+
+}
+
+.btn {
+    padding: 10px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-register {
+    background-color: white;
+    color: #1a73e8;
+    border: 2px solid #1a73e8;
+}
+
+.btn-register:hover {
+    background-color: #e8f0fe;
+}
+
+.btn-signin {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+}
+
+.btn-signin:hover {
+    background-color: #1669c1;
+}
+
+.hero-image {
+    background-image: url("./bg-image.png");
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.hero-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    max-width: 900px;
+    padding: 0 20px;
+
+
+}
+
+.hero-flex h1 {
+    font-size: 2rem;
+
+}
+
+.hero-flex p {
+    font-size: 1rem;
+}
+
+.travel-card {
+    display: flex;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+
+}
+
+.destination {
+    align-items: center;
+}
+
+.travel-search {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 95%
+}
+
+.travel-card {
+    margin: 0px auto;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease;
+    width: 1000px;
+    
+}
+
+.travel-form {
+    margin: 0 auto;
+    padding: 10px
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.input-group .icon {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none;
+    align-items: center;
+}
+
+.input-group input {
+    max-width: 200px;
+    padding-left: 25px;
+    height: 43px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
