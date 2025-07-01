@@ -22,3 +22,19 @@ body {
     margin: 0 auto;
      max-height: 1000px;
 }
+.btn-group{
+    display: flex;
+    flex-direction: row;
+}
+.action-btn{
+    background-color: red;
+    width: 100px;
+    height: 10px;   
+    display: inline-block;
+}
+.reset-btn{
+    background-color: black;
+    width: 100px;
+    height: 10px;
+    display: inline-block;
+}
