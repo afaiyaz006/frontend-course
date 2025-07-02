@@ -74,10 +74,10 @@ body {
 }
 
 .image-content {
-    position:absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,12 +85,76 @@ body {
     color: white;
     gap: 30px
 }
-.image-content h1{
+
+.image-content h1 {
     font-size: 32px;
     font-weight: 700;
 }
-.image-content p{
+
+.image-content p {
     text-align: center;
     font-size: 20px;
     font-weight: 400;
+}
+
+.destination-form-group {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+}
+
+.destination-form {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.text-input {
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(29, 29, 29);
+    font-weight: 400;
+    position: relative;
+}
+.text-icon{
+    position: absolute;
+}
+.going {
+    width: 300px;
+}
+
+.check-in {
+    width: 200px;
+}
+
+.check-out {
+    width: 200px;
+
+}
+
+.guests {
+    width: 200px;
+}
+
+.submit-btn {
+    background-color: #2F80ED;
+    color: #fff;
+    width: 148px;
+    height: 60px;
+    font-size: 16px;
+}
+
+.warning {
+    padding-top: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background: #FCEFCA;
+    border-radius: 8px;
+    margin: 50px 0px;
+    padding: 30px;
+    gap: 10px
 }
