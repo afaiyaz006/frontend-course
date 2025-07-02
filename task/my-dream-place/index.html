@@ -3,324 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Discover your dream destination with My Dream Place. Explore beautiful getaways and exclusive travel deals."
-    />
-    <meta
-      name="keywords"
-      content="travel, dream vacation, holiday destinations, travel deals"
-    />
-    <meta name="author" content="My Dream Place Team" />
-
-    <title>My Dream Place | Discover Your Perfect Getaway</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="style.css" />
+    <title>my Dream Place</title>
   </head>
   <body>
-    <header>
-      <nav class="nav">
-        <div class="nav-icon">
-          <img
-            width="50"
-            height="50"
-            src="https://img.icons8.com/ios-filled/50/228BE6/airplane-mode-on.png"
-            alt="airplane-mode-on"
-          />
-          <h3>my Dream place</h3>
+    <header class="header-navbar">
+      <nav class="navbar">
+        <div class="aeroplane-icon">
+          <svg
+            width="45"
+            height="45"
+            viewBox="0 0 19 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.414 10.7779C0.5 10.9999 0 12.1919 0 12.1919C0 12.1919 3.398 12.6259 4.949 14.3129C6.5 15.9999 7.071 19.2629 7.071 19.2629C7.071 19.2629 8.47 19.6979 8.485 17.8489C8.5 15.9999 7.778 14.3129 7.778 14.3129L11.091 10.9999L14.701 18.7039C14.701 18.7039 16.08 19.2299 16.04 17.3649C16 15.4999 14.85 7.24194 14.85 7.24194L17.678 4.41294C17.869 4.22845 18.0214 4.00776 18.1262 3.76375C18.231 3.51974 18.2862 3.2573 18.2885 2.99174C18.2908 2.72619 18.2402 2.46283 18.1396 2.21703C18.0391 1.97124 17.8906 1.74794 17.7028 1.56015C17.515 1.37237 17.2917 1.22386 17.0459 1.1233C16.8001 1.02274 16.5368 0.972133 16.2712 0.974441C16.0056 0.976748 15.7432 1.03192 15.4992 1.13674C15.2552 1.24156 15.0345 1.39392 14.85 1.58494L11.947 4.48794C11.947 4.48794 4.148 3.09394 1.824 3.29694C-0.5 3.49994 0.559 4.56294 0.559 4.56294L8.203 8.23294L4.95 11.4859C4.95 11.4859 2.328 10.5559 1.414 10.7779Z"
+              fill="#2F80ED"
+            />
+          </svg>
+          <h3>my Dream Place</h3>
         </div>
-
-        <div class="nav-menu">
-          <div class="nav-item">Home</div>
-          <div class="nav-item">Discover</div>
-          <div class="nav-item">Activity</div>
-          <div class="nav-item">About</div>
-          <div class="nav-item">Contact</div>
-        </div>
-        <div class="button-container">
-          <button class="btn btn-register">Register</button>
-          <button class="btn btn-signin">Sign In</button>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">Discover</a></li>
+          <li><a href="/services">Activities</a></li>
+          <li><a href="/contact">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="btn-group">
+          <button class="btn">Register</button>
+          <button class="btn">Sign In</button>
         </div>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-        <div class="hero-image">
-          <div class="hero-flex">
-            <h1>Enjoy your dream vacation</h1>
+        <div class="image-content">
+          
+          
+            <h1>Enjoy Your Dream vacation</h1>
             <p>
-              Plan and book your perfect trip with expert advice,travel tips,
-              destination<br />
-              information, and inspiration from us.
+              Plan and book our perfect trip with expert advice, travel tips,
+              destination information and inspiration from us
             </p>
-          </div>
-          <div class="travel-search">
-            <div class="travel-card">
-              <form class="travel-form">
-                <div class="form-container">
-                  <div class="input-group">
-                    <i class="fas fa-map-marker-alt icon"></i>
-                    <input
-                      type="text"
-                      class="destination-input"
-                      placeholder="Where are you going?"
-                    />
-                  </div>
+        </div>
+        <div class="form">
+          <form>
+            <input placeholder="Where are you goind" />
+            <input placeholder="Check in date" />
+            <input placeholder="Check out date" />
+            <input placeholder="Guests " />
+            <input type="submit" class="btn" />
+          </form>
+        </div>
+      </section>
+      <section class="dream-vacation">
+        <h1>Enjoy your dream vacation</h1>
+        <p>
+          Plan and book our perfect trip with expert advice, travel tips,
+          destination information and inspiration from us
+        </p>
 
-                  <div class="input-group">
-                    <i class="fa-solid fa-calendar-days icon"></i>
-                    <input
-                      type="text"
-                      class="check-in-date-input"
-                      placeholder="Check in date"
-                    />
-                  </div>
-
-                  <div class="input-group">
-                    <i class="fa-solid fa-calendar-days icon"></i>
-                    <input
-                      type="text"
-                      class="check-out-date-input"
-                      placeholder="Check-out date"
-                    />
-                  </div>
-
-                  <div class="input-group">
-                    <i class="fa-solid fa-user icon"></i>
-                    <input
-                      type="text"
-                      class="guests-input"
-                      placeholder="Number of guests"
-                    />
-                  </div>
-                  <button class="btn btn-search">Search</button>
-                </div>
-              </form>
-            </div>
+        <div class="gallery">
+          <div class="gallery-item-country">
+            <img src="" alt="" />
+            <h3>Australia</h3>
+            <p>2246 properties</p>
+          </div>
+          <div class="gallery-item-country">
+            <img src="" alt="" />
+            <h3>Australia</h3>
+            <p>2246 properties</p>
+          </div>
+          <div class="gallery-item-country">
+            <img src="" alt="" />
+            <h3>Australia</h3>
+            <p>2246 properties</p>
+          </div>
+          <div class="gallery-item-country">
+            <img src="" alt="" />
+            <h3>Australia</h3>
+            <p>2246 properties</p>
           </div>
         </div>
       </section>
-      <section class="warning-section">
-        <div class="warning">
-          <i class="fa-solid fa-triangle-exclamation"></i>
-          <p>Check the latest Covid-19 restrictions before you travel</p>
-        </div>
-      </section>
-      <section class="section-gallery">
-        <div class="vacation-destination-container">
-          <h1>Enjoy your dream vacation</h1>
-          <p>
-            Plan and book our perfect trip with expert advice, travel tips,
-            destination information and inspiration from us
-          </p>
-          <div class="gallery">
-            <div class="gallery-card">
-              <img src="https://picsum.photos/seed/picsum/300/200" />
-              <h3>Canada</h3>
-              <p>2246 properties</p>
-            </div>
-            <div class="gallery-card">
-              <img src="https://picsum.photos/seed/picsum1/300/200" />
-              <h3>Australia</h3>
-              <p>2246 properties</p>
-            </div>
-            <div class="gallery-card">
-              <img src="https://picsum.photos/seed/picsum2/300/200" />
-              <h3>Japan</h3>
-              <p>2246 properties</p>
-            </div>
-            <div class="gallery-card">
-              <img src="https://picsum.photos/seed/picsum3/300/200" />
-              <h3>New Zealand</h3>
-              <p>2246 properties</p>
-            </div>
-            <div class="gallery-card">
-              <img src="https://picsum.photos/seed/picsum7/300/200" />
-              <h3>Greece</h3>
-              <p>2246 properties</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-gallery">
-        <div class="vacation-destination-container">
-          <h1>Get inspiration for your next trip</h1>
-          <div class="gallery">
-            <div class="inspiration-gallery-card">
-              <img
-                src="https://picsum.photos/seed/picsum3/300/200"
-                alt="Japan"
-              />
-              <div class="inspiration-gallery-text">
-                <h3>Sydeny’s 10 most fashionable 5 star hotels</h3>
-                <p>
-                  Browse the fastest growing tourism sector in the heart of
-                  Australia tourism capital ....
-                </p>
-              </div>
-            </div>
-            <div class="inspiration-gallery-card">
-              <img
-                src="https://picsum.photos/seed/picsum6/300/200"
-                alt="Japan"
-              />
-              <div class="inspiration-gallery-text">
-                <h3>Top cities for Vegan Travellers</h3>
-                <p>
-                  Top sites where you do not have to worry about being a vegan.
-                  Our tourist guide is here...
-                </p>
-              </div>
-            </div>
-            <div class="inspiration-gallery-card">
-              <img
-                src="https://picsum.photos/seed/picsum7/300/200"
-                alt="Japan"
-              />
-              <div class="inspiration-gallery-text">
-                <h3>World’s top destinations during and post covid timeline</h3>
-                <p>
-                  Pandemic is still intact and will be here for a longer time.
-                  Here’s where your next destination...
-                </p>
-              </div>
-            </div>
-            <div class="inspiration-gallery-card">
-              <img
-                src="https://picsum.photos/seed/picsum8/300/200"
-                alt="Japan"
-              />
-              <div class="inspiration-gallery-text">
-                <h3>Sydeny’s 10 most fashionable 5 star hotels</h3>
-                <p>
-                  Browse the fastest growing tourism sector in the heart of
-                  Australia tourism capital ....
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-gallery">
-        <div class="vacation-destination-container">
-          <h1>Enjoy your dream vacation</h1>
-          <p>
-            Plan and book our perfect trip with expert advice, travel tips,
-            destination information and inspiration from us
-          </p>
-          <div class="gallery">
-            <div class="popular-hotel-gallery-card">
-              <img src="https://picsum.photos/seed/picsum233/300/200" />
-              <h3>Lakeside Motel Warefront</h3>
-              <p>2246 properties</p>
-            </div>
-            <div class="popular-hotel-gallery-card">
-              <img src="https://picsum.photos/seed/picesueem1223/300/200" />
-              <h3>Recce Graham resort</h3>
-              <p>2246 properties</p>
-            </div>
-            <div class="popular-hotel-gallery-card">
-              <img src="https://picsum.photos/seed/picsum22321/300/200" />
-              <h3>Fireside Dinners</h3>
-              <p>2246 properties</p>
-            </div>
-            <div class="popular-hotel-gallery-card">
-              <img src="https://picsum.photos/seed/picsum3223/300/200" />
-              <h3>Oculous Inn Stay</h3>
-              <p>2246 properties</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="download-mobile-app">
-        <img src="./rect.png" />
-        <div class="download-message">
-          <h1>
-            Download the mobile application for bonus coupons and travel codes
-          </h1>
-          <button class="btn-download">Download</button>
-        </div>
-      </section>
-      <section class="explore-the-world">
-        <h1>Explore the world with My Dream Place</h1>
-        <a href="#"> Discover new places and experiences </a>
-      </section>
-      <section class="footer-links">
-        <div class="footer-list">
-          <div class="footer-icon">
-            <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios-filled/50/228BE6/airplane-mode-on.png"
-              alt="airplane-mode-on"
-            />
-            <h1>my Dream Place</h1>
-          </div>
-          <p>Your next goto companion for travel</p>
-        </div>
-         <div class="footer-list">
-          <div class="footer-icon">
-            <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios-filled/50/228BE6/airplane-mode-on.png"
-              alt="airplane-mode-on"
-            />
-            <h1>my Dream Place</h1>
-          </div>
-          <p>Your next goto companion for travel</p>
-        </div>
-         <div class="footer-list">
-          <div class="footer-icon">
-            <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios-filled/50/228BE6/airplane-mode-on.png"
-              alt="airplane-mode-on"
-            />
-            <h1>my Dream Place</h1>
-          </div>
-          <p>Your next goto companion for travel</p>
-        </div>
-         <div class="footer-list">
-          <div class="footer-icon">
-            <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios-filled/50/228BE6/airplane-mode-on.png"
-              alt="airplane-mode-on"
-            />
-            <h1>my Dream Place</h1>
-          </div>
-          <p>Your next goto companion for travel</p>
-        </div>
-        
-      </section>
+      <section class="mobile-banner"></section>
+      <footer></footer>
     </main>
-
-    <footer>
-      <!-- Footer links, copyright -->
-    </footer>
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
   </body>
 </html>

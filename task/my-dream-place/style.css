@@ -1,6 +1,3 @@
-/* styles.css */
-
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,338 +5,92 @@
 }
 
 body {
-    font-family: 'Poppins', 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    margin: 0 100px
+    font-family: 'Inter', sans-serif;
+    margin: 0 50px
 }
 
-
-.nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 10px 10px 10px
+.header-navbar {
+    padding-top: 12px;
+    padding-bottom: 20px;
 }
 
-.nav-menu {
+.navbar {
     display: flex;
-    align-items: start;
-    justify-content: space-between;
     flex-direction: row;
-    gap: 10px
+    align-items: center;
+    justify-content: space-between;
 }
 
-.button-container {
+.navbar ul {
+    list-style: none;
     display: flex;
-    gap: 10px;
+    flex-direction: row;
+    gap: 60px;
+}
 
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.aeroplane-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url('./bg-image.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .btn {
-    padding: 10px 24px;
-    font-size: 1rem;
-    border-radius: 8px;
-    font-family: sans-serif;
+    min-width: 100px;
+    height: 45px;
+    color: #2F80ED;
+    padding: 10px 5px;
+    font-weight: bold;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #2F80ED;
+
+    background: #fff;
 }
 
-.btn-download {
-    background-color: #1a73e8;
-    color: white;
-    border: none;
+.btn:hover {
+    background: #2F80ED;
+    color: #fff;
 }
 
-.btn-register {
-    background-color: white;
-    color: #1a73e8;
-    border: 2px solid #1a73e8;
-}
-
-.btn-register:hover {
-    background-color: #e8f0fe;
-}
-
-.btn-signin {
-    background-color: #1a73e8;
-    color: white;
-    border: none;
-}
-
-.btn-search {
-    background-color: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 40px
-}
-
-.btn-signin:hover {
-    background-color: #1669c1;
-}
-
-.btn-search:hover {
-    background-color: #1669c1;
-
-}
-
-.hero-image {
-    background-image: url("./bg-image.png");
-    height: 800px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border-radius: 10px;
-
+.image-content {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative
-}
-
-.hero-flex {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     color: white;
-    max-width: 900px;
-    padding: 0 20px;
-
-
-}
-
-.hero-flex h1 {
-    font-size: 2rem;
-
-}
-
-.hero-flex p {
-    font-size: 1rem;
-}
-
-.travel-card {
-    display: flex;
-}
-
-.nav-icon {
-    display: flex;
-    align-items: center;
-
-}
-
-.destination {
-    align-items: center;
-}
-
-.travel-search {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 95%
-}
-
-.travel-card {
-    margin: 0px auto;
-    background-color: #fff;
-    border-radius: 16px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.3s ease;
-    width: 1000px;
-    height: 64px;
-
-}
-
-.travel-form {
-    margin: 0 auto;
-    padding: 10px;
-}
-
-.form-container {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-}
-
-.input-group {
-    position: relative;
-    width: 100%;
-    display: flex;
-}
-
-.input-group .icon {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-    color: #999;
-    pointer-events: none;
-    align-items: center;
-}
-
-.input-group input {
-    max-width: 200px;
-    padding-left: 28px;
-    height: 43px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem
-}
-
-.warning-section {
-    padding-top: 50px;
-}
-
-.warning {
-    background-color: #FCEFCA;
-    padding: 20px;
-    font-size: 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.2rem;
-    border-radius: 10px
-}
-
-.section-gallery {
-    padding-top: 50px
-}
-
-.vacation-destination-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px
-}
-
-.gallery {
-    display: flex;
-    margin-top: 10px;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.gallery-card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px
-}
-
-.gallery-card img {
-    border-radius: 8px;
-    width: 300px;
-    height: 210px
-}
-
-.inspiration-gallery-card {
-    position: relative;
-    width: 400px;
-    height: 280px;
-    overflow: hidden;
-    border-radius: 12px;
-    cursor: pointer;
-}
-
-.inspiration-gallery-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.inspiration-gallery-card p {
-    color: white
-}
-
-.inspiration-gallery-text {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-    color: #fff;
-
-}
-
-.inspiration-gallery-text h3,
-.inspiration-gallery-text p {
-    margin: 0;
-}
-
-.popular-hotel-gallery-card {
-    width: 295px;
-    height: 400px;
-
-}
-
-.popular-hotel-gallery-card img {
-    border-radius: 8px;
-    width: 300px;
-    height: 300px
-}
-
-.download-mobile-app {
-    position: relative;
-    padding-top: 10px;
-    border-radius: 8px;
-
-}
-
-.download-mobile-app img {
-
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.download-message {
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-
-}
-
-.download-message h1 {
-    font-size: 1.8rem;
-}
-
-.download-message button {
-    width: 182px;
-    height: 44px;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    font-weight: 800;
-
-}
-
-.explore-the-world {
-    text-align: center;
-    padding: 30px;
-    font-size: 1.5rem;
-}
-
-.footer-icon {
-    display: flex;
-    flex-direction: row;
-    gap: 5px
-}
-
-.footer-lists {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-}
-
-.footer-links {
-    display: flex;
-    flex-direction: row;
     gap: 30px
+}
+.image-content h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+.image-content p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
 }
