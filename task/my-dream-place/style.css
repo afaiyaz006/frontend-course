@@ -104,6 +104,8 @@ body {
     transform: translate(-50%, -50%);
     background: white;
     border-radius: 10px;
+    box-shadow: 0px 4px 37px 0px #00000026;
+
 }
 
 .destination-form {
@@ -118,32 +120,56 @@ body {
     color: rgb(29, 29, 29);
     font-weight: 400;
     position: relative;
+    border: none;
+    background-color: #F2F2F2;
+
 }
-.text-icon{
+
+.text-icon {
     position: absolute;
 }
+
 .going {
     width: 300px;
+    padding-left: 40px;
+    background-image: url('./icons/map.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: 10px 13px;
 }
 
 .check-in {
     width: 200px;
+    padding-left: 40px;
+    background-image: url('./icons/calendar.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: 10px 13px;
 }
 
 .check-out {
     width: 200px;
-
+    padding-left: 40px;
+    background-image: url('./icons/calendar.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: 10px 13px;
 }
 
 .guests {
-    width: 200px;
+    width: 250px;
+    padding-left: 40px;
+    background-image: url('./icons/user-1.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: 10px 13px;
 }
 
 .submit-btn {
     background-color: #2F80ED;
     color: #fff;
-    width: 148px;
-    height: 60px;
+    width: 168px;
+    height: 44px;
     font-size: 16px;
 }
 
@@ -157,4 +183,34 @@ body {
     margin: 50px 0px;
     padding: 30px;
     gap: 10px
+}
+
+.dream-vacation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+}
+
+.gallery-item-country {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.gallery-item-country img {
+    width: 295px;
+    height: 220px;
+    border-radius: 8px;
+    transition: transform 250ms ease-in-out;
+    display: block;
+}
+
+.gallery-item-country:hover {
+    transform: translateY(-10px);
 }
