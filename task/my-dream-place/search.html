@@ -62,135 +62,313 @@
               stroke-width="2"
             />
           </svg>
-          <img src="./icons/human.png" alt="" class="icon-human">
-
+          <img src="./icons/human.png" alt="" class="icon-human" />
         </div>
       </nav>
+
+      <div class="destination-form-group">
+        <form class="destination-form">
+          <input placeholder="Where are you going?" class="text-input going" />
+          <input placeholder="Check in date?" class="text-input check-in" />
+          <input placeholder="Check out date?" class="text-input check-out" />
+          <input placeholder="Guests " class="text-input guests" />
+          <input type="submit" class="btn submit-btn" value="Search" />
+        </form>
+      </div>
     </header>
 
     <main class="search-page">
-      <section>
-        <div class="destination-form-group ">
-          <form class="destination-form">
-            <input
-              placeholder="Where are you going?"
-              class="text-input going"
-            />
-            <input placeholder="Check in date?" class="text-input check-in" />
-            <input placeholder="Check out date?" class="text-input check-out" />
-            <input placeholder="Guests " class="text-input guests" />
-            <input type="submit" class="btn submit-btn" value="Search" />
-          </form>
-        </div>
-      </section>
-      <section class="dream-vacation">
-        <h1>Enjoy your dream vacation</h1>
-        <p>
-          Plan and book our perfect trip with expert advice, travel tips
-          destination information and<br />
-          inspiration from us
-        </p>
+      <section class="search-section">
+        <div class="search-grid">
+          <!-- Sidebar -->
 
-        <div class="gallery">
-          <div class="gallery-item-country">
-            <img src="./country/aus.jpg" alt="" />
-            <h3>Australia</h3>
-            <p>2246 properties</p>
-          </div>
-          <div class="gallery-item-country">
-            <img src="./country/aus.jpg" alt="" />
-
-            <h3>Japan</h3>
-            <p>2246 properties</p>
-          </div>
-          <div class="gallery-item-country">
-            <img src="./country/aus.jpg" alt="" />
-
-            <h3>New Zealand</h3>
-            <p>2246 properties</p>
-          </div>
-          <div class="gallery-item-country">
-            <img src="./country/aus.jpg" alt="" />
-
-            <h3>Greece</h3>
-            <p>2246 properties</p>
-          </div>
-        </div>
-      </section>
-      <section class="inspiration">
-        <h1>Get inspiration for your next trip</h1>
-        <div class="gallery-inspiration">
-          <div class="gallery-item-inspiration">
-            <div class="inspiration-text">
-              <h3>Sydeny’s 10 most fashionable 5 star hotels</h3>
-              <p>
-                Browse the fastest growing tourism sector in the heart of
-                Australia tourism capital ....
-              </p>
+          <aside class="search-property-filters">
+            <div class="filter-section search-section">
+              <div class="searchbar">
+                <h2 class="search-title">Search by property name</h2>
+                <div class="search-input-wrapper">
+                  <input type="text" placeholder="eg. Beach westpalm" />
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="gallery-item-inspiration">
-            <div class="inspiration-text">
-              <h3>Sydeny’s 10 most fashionable 5 star hotels</h3>
-              <p>
-                Browse the fastest growing tourism sector in the heart of
-                Australia tourism capital ....
-              </p>
-            </div>
-          </div>
-          <div class="gallery-item-inspiration">
-            <div class="inspiration-text">
-              <h3>Sydeny’s 10 most fashionable 5 star hotels</h3>
 
-              <p>
-                Browse the fastest growing tourism sector in the heart of
-                Australia tourism capital ....
-              </p>
+            <h2 class="filter-by-title">Filter by</h2>
+
+            <div class="filter-section">
+              <div class="filter-header">
+                <h3>Your budget per day</h3>
+              </div>
+              <div class="filter-content">
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="budget" /> $ 0 - $
+                      200</label
+                    >
+                    <p>200</p>
+                  </li>
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="budget" /> $ 200 - $
+                      500</label
+                    >
+                    <p>100</p>
+                  </li>
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="budget" /> $ 500 - $
+                      1,000</label
+                    >
+                    <p>15</p>
+                  </li>
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="budget" /> $ 1,000 - $
+                      2,000</label
+                    >
+                    <p>12</p>
+                  </li>
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="budget" /> $ 2,000 - $
+                      5,000</label
+                    >
+                    <p>230</p>
+                  </li>
+                </ul>
+                <div class="toggle-container">
+                  <span class="toggle-label">Set your own budget</span>
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
             </div>
+
+            <div class="filter-section">
+              <div class="filter-header">
+                <h3>Rating</h3>
+              </div>
+              <div class="filter-content">
+                <p class="rating-subtitle">Show only ratings more than</p>
+                <div class="rating-stars">
+                  <div class="star">
+                    <p>1</p>
+                    <svg
+                      width="16"
+                      height="15"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.00018 11.75L3.59168 14.4425L4.79018 9.4175L0.867676 6.0575L6.01643 5.645L8.00018 0.875L9.98393 5.645L15.1334 6.0575L11.2102 9.4175L12.4087 14.4425L8.00018 11.75Z"
+                        fill="#F2994A"
+                      />
+                    </svg>
+                  </div>
+                  <div class="star">
+                    <p>1</p>
+                    <svg
+                      width="16"
+                      height="15"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.00018 11.75L3.59168 14.4425L4.79018 9.4175L0.867676 6.0575L6.01643 5.645L8.00018 0.875L9.98393 5.645L15.1334 6.0575L11.2102 9.4175L12.4087 14.4425L8.00018 11.75Z"
+                        fill="#F2994A"
+                      />
+                    </svg>
+                  </div>
+                  <div class="star">
+                    <p>1</p>
+                    <svg
+                      width="16"
+                      height="15"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.00018 11.75L3.59168 14.4425L4.79018 9.4175L0.867676 6.0575L6.01643 5.645L8.00018 0.875L9.98393 5.645L15.1334 6.0575L11.2102 9.4175L12.4087 14.4425L8.00018 11.75Z"
+                        fill="#F2994A"
+                      />
+                    </svg>
+                  </div>
+                  <div class="star">
+                    <p>1</p>
+                    <svg
+                      width="16"
+                      height="15"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.00018 11.75L3.59168 14.4425L4.79018 9.4175L0.867676 6.0575L6.01643 5.645L8.00018 0.875L9.98393 5.645L15.1334 6.0575L11.2102 9.4175L12.4087 14.4425L8.00018 11.75Z"
+                        fill="#F2994A"
+                      />
+                    </svg>
+                  </div>
+                  <div class="star">
+                    <p>1</p>
+                    <svg
+                      width="16"
+                      height="15"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.00018 11.75L3.59168 14.4425L4.79018 9.4175L0.867676 6.0575L6.01643 5.645L8.00018 0.875L9.98393 5.645L15.1334 6.0575L11.2102 9.4175L12.4087 14.4425L8.00018 11.75Z"
+                        fill="#F2994A"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <div class="filter-header">
+                <h3>Popular Filters</h3>
+              </div>
+              <div class="filter-content">
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="popular" /> Free
+                      cancellation</label
+                    >
+                    <span>200</span>
+                  </li>
+                  <li class="filter-item">
+                    <label><input type="checkbox" name="popular" /> Spa</label>
+                    <span>100</span>
+                  </li>
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="popular" /> Beach
+                      front</label
+                    >
+                    <span>15</span>
+                  </li>
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="popular" /> Hot tub/
+                      jacuzzi</label
+                    >
+                    <span>12</span>
+                  </li>
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="popular" /> Book without
+                      credit card</label
+                    >
+                    <span>230</span>
+                  </li>
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="popular" /> No
+                      prepayment</label
+                    >
+                    <span>12</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <div class="filter-header">
+                <h3>Activities</h3>
+              </div>
+              <div class="filter-content">
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="activity" /> Fishing</label
+                    >
+                    <span>200</span>
+                  </li>
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="activity" /> Hiking</label
+                    >
+                    <span>100</span>
+                  </li>
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="activity" /> Beach</label
+                    >
+                    <span>15</span>
+                  </li>
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="activity" /> Cycling</label
+                    >
+                    <span>12</span>
+                  </li>
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="activity" /> Sauna</label
+                    >
+                    <span>230</span>
+                  </li>
+                  <li class="filter-item">
+                    <label
+                      ><input type="checkbox" name="activity" /> Night
+                      lights</label
+                    >
+                    <span>12</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Main Content Area-->
+          <div class="search-results">
+            <h1>Melbourne : 2,582 search results found</h1>
           </div>
         </div>
       </section>
-      <section class="popular-hotels">
-        <h1>Popular hotels</h1>
-        <div class="gallery">
-          <div class="hotel-place">
-            <img src="./country/lake-side.jpg" alt="" />
-            <h3>Lakeside Motel Warefront</h3>
-            <p>2246 properties</p>
-          </div>
-          <div class="hotel-place">
-            <img src="./country/lake-side.jpg" alt="" />
-            <h3>Lakeside Motel Warefront</h3>
-            <p>2246 properties</p>
-          </div>
-          <div class="hotel-place">
-            <img src="./country/lake-side.jpg" alt="" />
-            <h3>Lakeside Motel Warefront</h3>
-            <p>2246 properties</p>
-          </div>
-          <div class="hotel-place">
-            <img src="./country/lake-side.jpg" alt="" />
-            <h3>Lakeside Motel Warefront</h3>
-            <p>2246 properties</p>
-          </div>
-        </div>
-      </section>
-      <section class="mobile-banner">
-        <div class="text-image-overlay-banner">
-          <div class="download-info">
-            <h1>
-              Download the mobile application for bonus coupons<br />
-              and travel codes
-            </h1>
-            <button class="download-btn">Download mobile app</button>
-          </div>
-        </div>
-        <img src="./country/right-hand-image.png" />
-      </section>
-      <section class="explore-dream-place">
-        <h1>Explore the world with My Dream place</h1>
-        <p>Discover new places and experiences</p>
-      </section>
+
+      <div class="warning">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 12V18.6667"
+            stroke="#292D32"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M16.0001 28.5468H7.92007C3.29341 28.5468 1.36007 25.2401 3.60007 21.2001L7.76007 13.7068L11.6801 6.66679C14.0534 2.38679 17.9467 2.38679 20.3201 6.66679L24.2401 13.7201L28.4001 21.2135C30.6401 25.2535 28.6934 28.5601 24.0801 28.5601H16.0001V28.5468Z"
+            stroke="#292D32"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15.9932 22.6667H16.0052"
+            stroke="#292D32"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        Check the latest COVID-19 restrictions before you travel.
+        <a href="#">Learn more</a>
+      </div>
       <section class="important-links">
         <div class="footer-container">
           <div class="footer-column logo-column">
@@ -244,7 +422,6 @@
           </div>
         </div>
       </section>
-
       <footer class="copyright">&copy;my Dream Place 2022</footer>
     </main>
   </body>
