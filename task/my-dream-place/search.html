@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>my Dream Place-Search</title>
+  </head>
+  <body>
+    <header class="header-navbar blue-background">
+      <nav class="navbar white-text search-nav">
+        <div class="aeroplane-icon">
+          <svg
+            width="45"
+            height="45"
+            viewBox="0 0 19 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.414 10.7779C0.5 10.9999 0 12.1919 0 12.1919C0 12.1919 3.398 12.6259 4.949 14.3129C6.5 15.9999 7.071 19.2629 7.071 19.2629C7.071 19.2629 8.47 19.6979 8.485 17.8489C8.5 15.9999 7.778 14.3129 7.778 14.3129L11.091 10.9999L14.701 18.7039C14.701 18.7039 16.08 19.2299 16.04 17.3649C16 15.4999 14.85 7.24194 14.85 7.24194L17.678 4.41294C17.869 4.22845 18.0214 4.00776 18.1262 3.76375C18.231 3.51974 18.2862 3.2573 18.2885 2.99174C18.2908 2.72619 18.2402 2.46283 18.1396 2.21703C18.0391 1.97124 17.8906 1.74794 17.7028 1.56015C17.515 1.37237 17.2917 1.22386 17.0459 1.1233C16.8001 1.02274 16.5368 0.972133 16.2712 0.974441C16.0056 0.976748 15.7432 1.03192 15.4992 1.13674C15.2552 1.24156 15.0345 1.39392 14.85 1.58494L11.947 4.48794C11.947 4.48794 4.148 3.09394 1.824 3.29694C-0.5 3.49994 0.559 4.56294 0.559 4.56294L8.203 8.23294L4.95 11.4859C4.95 11.4859 2.328 10.5559 1.414 10.7779Z"
+              fill=" #fff"
+            />
+          </svg>
+          <h3>my Dream Place</h3>
+        </div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">Discover</a></li>
+          <li><a href="/services">Activities</a></li>
+          <li><a href="/contact">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="btn-group">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.3399 14.49L18.3399 12.83C18.1299 12.46 17.9399 11.76 17.9399 11.35V8.82004C17.9387 7.70407 17.6216 6.61125 17.0252 5.66801C16.4288 4.72477 15.5776 3.96966 14.5699 3.49004C14.3128 3.03338 13.9376 2.65418 13.4838 2.39207C13.0299 2.12997 12.514 1.99457 11.9899 2.00004C10.8999 2.00004 9.91994 2.59004 9.39994 3.52004C7.44994 4.49004 6.09994 6.50004 6.09994 8.82004V11.35C6.09994 11.76 5.90994 12.46 5.69994 12.82L4.68994 14.49C4.28994 15.16 4.19994 15.9 4.44994 16.58C4.68994 17.25 5.25994 17.77 5.99994 18.02C7.93994 18.68 9.97994 19 12.0199 19C14.0599 19 16.0999 18.68 18.0399 18.03C18.7399 17.8 19.2799 17.27 19.5399 16.58C19.7999 15.89 19.7299 15.13 19.3399 14.49Z"
+              fill="white"
+            />
+            <path
+              d="M14.8302 20.01C14.6199 20.5922 14.2355 21.0954 13.7291 21.4515C13.2228 21.8075 12.6191 21.999 12.0002 22C11.2102 22 10.4302 21.68 9.88018 21.11C9.56018 20.81 9.32018 20.41 9.18018 20C9.31018 20.02 9.44018 20.03 9.58018 20.05C9.81018 20.08 10.0502 20.11 10.2902 20.13C10.8602 20.18 11.4402 20.21 12.0202 20.21C12.5902 20.21 13.1602 20.18 13.7202 20.13C13.9302 20.11 14.1402 20.1 14.3402 20.07L14.8302 20.01Z"
+              fill="white"
+            />
+            <circle
+              cx="17"
+              cy="6"
+              r="5"
+              fill="#EB5757"
+              stroke="#2867BC"
+              stroke-width="2"
+            />
+          </svg>
+          <img src="./icons/human.png" alt="" class="icon-human">
+
+        </div>
+      </nav>
+    </header>
+
+    <main class="search-page">
+      <section>
+        <div class="destination-form-group ">
+          <form class="destination-form">
+            <input
+              placeholder="Where are you going?"
+              class="text-input going"
+            />
+            <input placeholder="Check in date?" class="text-input check-in" />
+            <input placeholder="Check out date?" class="text-input check-out" />
+            <input placeholder="Guests " class="text-input guests" />
+            <input type="submit" class="btn submit-btn" value="Search" />
+          </form>
+        </div>
+      </section>
+      <section class="dream-vacation">
+        <h1>Enjoy your dream vacation</h1>
+        <p>
+          Plan and book our perfect trip with expert advice, travel tips
+          destination information and<br />
+          inspiration from us
+        </p>
+
+        <div class="gallery">
+          <div class="gallery-item-country">
+            <img src="./country/aus.jpg" alt="" />
+            <h3>Australia</h3>
+            <p>2246 properties</p>
+          </div>
+          <div class="gallery-item-country">
+            <img src="./country/aus.jpg" alt="" />
+
+            <h3>Japan</h3>
+            <p>2246 properties</p>
+          </div>
+          <div class="gallery-item-country">
+            <img src="./country/aus.jpg" alt="" />
+
+            <h3>New Zealand</h3>
+            <p>2246 properties</p>
+          </div>
+          <div class="gallery-item-country">
+            <img src="./country/aus.jpg" alt="" />
+
+            <h3>Greece</h3>
+            <p>2246 properties</p>
+          </div>
+        </div>
+      </section>
+      <section class="inspiration">
+        <h1>Get inspiration for your next trip</h1>
+        <div class="gallery-inspiration">
+          <div class="gallery-item-inspiration">
+            <div class="inspiration-text">
+              <h3>Sydeny’s 10 most fashionable 5 star hotels</h3>
+              <p>
+                Browse the fastest growing tourism sector in the heart of
+                Australia tourism capital ....
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item-inspiration">
+            <div class="inspiration-text">
+              <h3>Sydeny’s 10 most fashionable 5 star hotels</h3>
+              <p>
+                Browse the fastest growing tourism sector in the heart of
+                Australia tourism capital ....
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item-inspiration">
+            <div class="inspiration-text">
+              <h3>Sydeny’s 10 most fashionable 5 star hotels</h3>
+
+              <p>
+                Browse the fastest growing tourism sector in the heart of
+                Australia tourism capital ....
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular-hotels">
+        <h1>Popular hotels</h1>
+        <div class="gallery">
+          <div class="hotel-place">
+            <img src="./country/lake-side.jpg" alt="" />
+            <h3>Lakeside Motel Warefront</h3>
+            <p>2246 properties</p>
+          </div>
+          <div class="hotel-place">
+            <img src="./country/lake-side.jpg" alt="" />
+            <h3>Lakeside Motel Warefront</h3>
+            <p>2246 properties</p>
+          </div>
+          <div class="hotel-place">
+            <img src="./country/lake-side.jpg" alt="" />
+            <h3>Lakeside Motel Warefront</h3>
+            <p>2246 properties</p>
+          </div>
+          <div class="hotel-place">
+            <img src="./country/lake-side.jpg" alt="" />
+            <h3>Lakeside Motel Warefront</h3>
+            <p>2246 properties</p>
+          </div>
+        </div>
+      </section>
+      <section class="mobile-banner">
+        <div class="text-image-overlay-banner">
+          <div class="download-info">
+            <h1>
+              Download the mobile application for bonus coupons<br />
+              and travel codes
+            </h1>
+            <button class="download-btn">Download mobile app</button>
+          </div>
+        </div>
+        <img src="./country/right-hand-image.png" />
+      </section>
+      <section class="explore-dream-place">
+        <h1>Explore the world with My Dream place</h1>
+        <p>Discover new places and experiences</p>
+      </section>
+      <section class="important-links">
+        <div class="footer-container">
+          <div class="footer-column logo-column">
+            <div class="logo">✈️ <span>my Dream Place</span></div>
+            <p>Your next goto companion for travel</p>
+          </div>
+
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Newsroom</a></li>
+              <li><a href="#">Advertising</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#">Australia</a></li>
+              <li><a href="#">New Zealand</a></li>
+              <li><a href="#">United States America (USA)</a></li>
+              <li><a href="#">Greece</a></li>
+              <li><a href="#">Maldives</a></li>
+              <li><a href="#">Singapore</a></li>
+              <li><a href="#">See more</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Terms and Policies</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Reward system policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Cancel your bookings</a></li>
+              <li><a href="#">Use Coupon</a></li>
+              <li><a href="#">Refund Policies</a></li>
+              <li><a href="#">International Travel Documents</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer class="copyright">&copy;my Dream Place 2022</footer>
+    </main>
+  </body>
+</html>

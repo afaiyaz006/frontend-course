@@ -6,12 +6,20 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    margin: 0 50px
+    margin: 0 0px;
+    position: relative;
+}
+
+main {
+    margin: 0 50px;
 }
 
 .header-navbar {
     padding-top: 12px;
     padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
 }
 
 .navbar {
@@ -32,6 +40,10 @@ body {
     color: black;
     text-decoration: none;
     font-weight: 400;
+}
+
+.search-nav ul li a {
+    color: white;
 }
 
 .aeroplane-icon {
@@ -345,4 +357,109 @@ body {
     border: 2px solid #2F80ED;
     background: #2F80ED;
     color: #fff;
+}
+
+.explore-dream-place {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 10px
+}
+
+.explore-dream-place h1 {
+    font-size: 28px;
+}
+
+.explore-dream-place p {
+    color: #2F80ED;
+    font-size: 16px;
+}
+
+.important-links {
+    background-color: #fff;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-column {
+    min-width: 180px;
+}
+
+.logo-column .logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.logo-column p {
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: #1a73e8;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/*For search*/
+.blue-background {
+    width: 100vw;
+    height: 200px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, #2969BF 0%, #144E9D 100%);
+}
+
+.white-text {
+    color: white
+}
+
+.icon-human {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+}
+
+.search-nav .btn-group {
+    gap: 12px
+}
+
+.search-page .destination-form-group {
+    position: absolute;
+    top: 9%;
 }
