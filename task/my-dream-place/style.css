@@ -209,8 +209,140 @@ body {
     border-radius: 8px;
     transition: transform 250ms ease-in-out;
     display: block;
+
 }
 
 .gallery-item-country:hover {
     transform: translateY(-10px);
+}
+
+.inspiration {
+    margin-top: 50px;
+
+}
+
+.inspiration h1 {
+    margin-bottom: 20px;
+}
+
+.inspiration {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-inspiration {
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+}
+
+.gallery-item-inspiration {
+    background-image: url("./country/sydney.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    width: 400px;
+    height: 280px;
+    position: relative;
+
+}
+
+.inspiration-text {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    top: 60%;
+    color: white;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inspiration-text h2 {
+    margin-bottom: 10px;
+}
+
+.popular-hotels {
+    margin-top: 50px;
+}
+
+.popular-hotels h1 {
+    margin-bottom: 20px;
+
+}
+
+.hotel-place {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.hotel-place img {
+    width: 295px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.mobile-banner {
+    position: relative;
+    height: 280px;
+    width: 100%;
+    margin-top: 50px;
+    color: white;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.mobile-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("./country/ocean.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(-1);
+    z-index: -2;
+}
+
+.text-image-overlay-banner {
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 28px;
+
+}
+
+.mobile-banner img {
+    width: 800px;
+    height: 516px;
+    margin-left: 42%;
+    margin-top: -5%;
+}
+
+.download-info h1 {
+    margin-bottom: 20px;
+    display: flex;
+    font-size: 28px;
+    flex-direction: column;
+}
+
+.download-btn {
+    width: 200px;
+    height: 60px;
+    font-size: 15px;
+    padding: 10px 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #2F80ED;
+    background: #2F80ED;
+    color: #fff;
 }
