@@ -828,10 +828,11 @@ main {
   background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
   overflow: hidden; /* Ensures image corners are rounded */
-  max-width: 980px;
-  margin: auto;
+
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 /* Card Image */
@@ -995,4 +996,14 @@ main {
   font-size: 12px;
   color: #6c757d;
   margin: 0;
+}
+
+.hotel-cards .load-more{
+    display: flex;
+    justify-content: center;
+}
+.hotel-cards .load-more .load-more-btn{
+    background-color: #2F80ED1A;
+    color: #2F80ED;
+    padding: 10px;
 }
