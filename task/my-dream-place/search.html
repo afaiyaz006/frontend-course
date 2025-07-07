@@ -330,8 +330,82 @@
           </aside>
 
           <!-- Main Content Area-->
-          <div class="search-results">
+          <div class="main-content">
             <h1>Melbourne : 2,582 search results found</h1>
+            <div class="heading-main">
+              <div class="selector">
+                <div class="btn">Our top picks</div>
+                <div class="btn">Hotel and apartments</div>
+                <div class="btn">Residence</div>
+                <div class="btn">Resort</div>
+                <div class="btn">Shared Space</div>
+              </div>
+
+              <div class="dropdown-wrapper">
+                <label for="sort-select" class="dropdown-label">Sort by</label>
+                <select id="sort-select" class="custom-select">
+                  <option value="recommended" selected>Recommended</option>
+                  <option value="newest">Newest</option>
+                  <option value="price-low-high">Price: Low to High</option>
+                  <option value="price-high-low">Price: High to Low</option>
+                </select>
+              </div>
+            </div>
+            <div class="hotel-cards">
+              <div class="card">
+                <!-- Image Section -->
+                <img
+                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  alt="Interior of Lakeside Motel room with view of the garden"
+                  class="card-image"
+                />
+
+                <!-- Content Section -->
+                <div class="card-content">
+                  <!-- Left Column: Hotel Details -->
+                  <div class="card-main-info">
+                    <h2 class="hotel-name">Lakeside Motel Warefront</h2>
+
+                    <div class="card-reviews">
+                      <span class="stars"
+                        >★★★★<span class="star-half">★</span></span
+                      >
+                      <span class="review-text">4.5 (1200 Reviews)</span>
+                    </div>
+
+                    <div class="card-description">
+                      <p>Live a little and celbrate with champagne</p>
+                      <p>
+                        Reats include a glass of French champagne, parking and a
+                        late checkout. Gym included. Flexible cancellation
+                        applies
+                      </p>
+                    </div>
+
+                    <button class="see-availability-btn">
+                      See availability
+                    </button>
+                  </div>
+
+                  <!-- Right Column: Booking & Price -->
+                  <div class="card-booking-info">
+                    <button class="book-now-btn">
+                      Book now and receive 15% off
+                    </button>
+
+                    <div class="price-details">
+                      <span class="discount-badge">5% off</span>
+                      <p class="booking-period">1 room 2 days</p>
+                      <div class="price-amount">
+                        <span class="original-price">$150</span>
+                        <span class="current-price">$130</span>
+                      </div>
+                      <p class="taxes-info">Includes taxes and fees</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

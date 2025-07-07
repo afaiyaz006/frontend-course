@@ -76,7 +76,6 @@ main {
     outline: none;
     border-radius: 5px;
     border: 2px solid #2F80ED;
-
     background: #fff;
 }
 
@@ -473,7 +472,7 @@ main {
 .search-grid {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 24px;
+    /* gap: 10px; */
     margin-top: 100px;
 }
 
@@ -526,11 +525,13 @@ main {
 .filter-list {
     display: flex;
     flex-direction: column;
+
 }
 
 .filter-item {
     display: flex;
     flex-direction: column;
+
 }
 
 .rating-stars {
@@ -541,7 +542,24 @@ main {
 .star {
     display: flex;
     flex-direction: row;
-    gap: 5px
+    gap: 5px;
+    border: 1px solid #E0E0E0;
+    align-items: center;
+    padding: 5px;
+    border-radius: 0;
+    /* Default: no border-radius */
+}
+
+/* First star (left-most) */
+.rating-stars .star:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+/* Last star (right-most) */
+.rating-stars .star:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .filter-section {
@@ -573,6 +591,9 @@ main {
 
 .filter-content {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .filter-title,
@@ -610,14 +631,20 @@ main {
 
 }
 
-.filter-item input {
+.filter-item input[type="checkbox"] {
     width: 20px;
     height: 20px;
     margin-right: 10px;
-    border-radius: 5px;
     border: 1px solid #BDBDBD;
-    border-radius: 50%;
+    border-radius: 8px;
+    /* Changed from 50% to 8px */
 
+    background-color: white;
+    cursor: pointer;
+}
+
+.filter-item input:checked {
+    background-color: #4CAF50;
 }
 
 /*Button*/
@@ -625,7 +652,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+
 }
 
 .toggle-label {
@@ -676,4 +703,296 @@ main {
 .switch input:checked+.slider::before {
     transform: translateX(12px);
     /* 32 - 20 = 12 */
+}
+
+/*Select category*/
+/* Frame 32 */
+.search-buttons {
+    margin-top: 30px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+
+}
+.heading-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     margin-top: 16px;
+}
+.selector {
+   
+    display: flex;
+    flex-direction: row;
+}
+
+.selector .btn:first-child {
+    border-radius: 10px 0px 0px 10px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 0px;
+}
+
+.selector .btn:last-child {
+    border-radius: 0px 10px 10px 0px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+
+.selector .btn {
+    text-align: center;
+    border-radius: 0px;
+    padding: 10px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 0px;
+
+}
+/* Wrapper for positioning the label and arrow */
+.dropdown-wrapper {
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  width: 250px; /* Adjust width as needed */
+
+}
+
+/* The actual label text ("Sort by") */
+.dropdown-label {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  font-size: 13px;
+  color: #6c757d;
+  /* Clicks should fall through to the select element */
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* The main select element */
+.custom-select {
+  /* Remove default browser appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  /* Styling */
+  width: 100%;
+  padding: 24px 40px 8px 12px; /* Top padding makes space for the label */
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #212529;
+  cursor: pointer;
+  outline: none; /* Removes the focus outline */
+  transition: border-color 0.15s ease-in-out;
+  align-items: center;
+}
+
+/* Change border color on hover/focus */
+.custom-select:hover,
+.custom-select:focus {
+  border-color: #86b7fe;
+}
+
+/* Custom dropdown arrow using a pseudo-element */
+.dropdown-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  
+  /* Create the chevron shape */
+  width: 8px;
+  height: 8px;
+  border: solid #212529;
+  border-width: 0 2px 2px 0;
+  
+  /* Position and rotate the chevron */
+  transform: translateY(-75%) rotate(45deg);
+  
+  /* Clicks should fall through to the select element */
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* The main card container */
+.card {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden; /* Ensures image corners are rounded */
+  max-width: 980px;
+  margin: auto;
+}
+
+/* Card Image */
+.card-image {
+  width: 320px;
+  object-fit: cover;
+  flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+/* Wrapper for all text content */
+.card-content {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 24px;
+  gap: 20px;
+}
+
+/* Left column with hotel info */
+.card-main-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #212529;
+  margin: 0 0 8px 0;
+}
+
+/* Reviews section with stars */
+.card-reviews {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.stars {
+  color: #f9a825; /* Orange/Yellow for stars */
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Trick to create a half-filled star */
+.star-half {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  width: 50%;
+  color: #e0e0e0; /* Color for the empty half */
+}
+
+
+.review-text {
+  font-size: 14px;
+  color: #495057;
+}
+
+/* Description text */
+.card-description {
+  font-size: 14px;
+  color: #495057;
+  line-height: 1.5;
+  margin-bottom: auto; /* Pushes the button to the bottom */
+}
+
+.card-description p {
+  margin: 0 0 8px 0;
+}
+
+/* Blue "See availability" button */
+.see-availability-btn {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: flex-start; /* Don't stretch full width */
+  transition: background-color 0.2s;
+}
+
+.see-availability-btn:hover {
+  background-color: #0b5ed7;
+}
+
+/* Right column with booking info */
+.card-booking-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align all items to the right */
+  flex-shrink: 0; /* Prevent this column from shrinking */
+  text-align: right;
+}
+
+/* Red "Book now" button */
+.book-now-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 24px;
+  transition: background-color 0.2s;
+}
+
+.book-now-btn:hover {
+  background-color: #c82333;
+}
+
+/* Wrapper for all the price details */
+.price-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+/* Green discount badge */
+.discount-badge {
+  background-color: #198754;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.booking-period {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0;
+}
+
+.price-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.original-price {
+  font-size: 16px;
+  color: #dc3545;
+  text-decoration: line-through;
+}
+
+.current-price {
+  font-size: 26px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.taxes-info {
+  font-size: 12px;
+  color: #6c757d;
+  margin: 0;
 }
