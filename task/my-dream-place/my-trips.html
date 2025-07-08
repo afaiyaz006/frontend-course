@@ -31,11 +31,11 @@
           <h3>my Dream Place</h3>
         </div>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">Discover</a></li>
-          <li><a href="/services">Activities</a></li>
-          <li><a href="/contact">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="search.html">Discover</a></li>
+          <li><a href="my-trips.html">Activities</a></li>
+          <li><a href="#important-links">About</a></li>
+          <li><a href="#important-links">Contact</a></li>
         </ul>
         <div class="btn-group">
           <svg
@@ -63,7 +63,151 @@
             />
           </svg>
 
-          <img src="./icons/human.png" alt="" class="icon-human" />
+          <img
+            src="./icons/human.png"
+            alt=""
+            class="icon-human"
+            id="profile-pic"
+          />
+          <div class="profile-menu" id="profile-menu">
+            <div
+              class="profile-menu-item"
+              onclick="window.location.href='search.html'"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_4_3047)">
+                  <path
+                    d="M15.1171 18.0166C14.3838 18.2333 13.5171 18.3333 12.5005 18.3333H7.50046C6.48379 18.3333 5.61712 18.2333 4.88379 18.0166C5.06712 15.8499 7.29212 14.1416 10.0005 14.1416C12.7088 14.1416 14.9338 15.8499 15.1171 18.0166V18.0166Z"
+                    stroke="#4F4F4F"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.5003 1.6665H7.50033C3.33366 1.6665 1.66699 3.33317 1.66699 7.49984V12.4998C1.66699 15.6498 2.61699 17.3748 4.88366 18.0165C5.06699 15.8498 7.29199 14.1415 10.0003 14.1415C12.7087 14.1415 14.9337 15.8498 15.117 18.0165C17.3837 17.3748 18.3337 15.6498 18.3337 12.4998V7.49984C18.3337 3.33317 16.667 1.6665 12.5003 1.6665ZM10.0003 11.8082C8.35033 11.8082 7.01699 10.4665 7.01699 8.8165C7.01699 7.1665 8.35033 5.83317 10.0003 5.83317C11.6503 5.83317 12.9837 7.1665 12.9837 8.8165C12.9837 10.4665 11.6503 11.8082 10.0003 11.8082Z"
+                    stroke="#4F4F4F"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.9833 8.81634C12.9833 10.4663 11.6499 11.808 9.99993 11.808C8.34993 11.808 7.0166 10.4663 7.0166 8.81634C7.0166 7.16634 8.34993 5.83301 9.99993 5.83301C11.6499 5.83301 12.9833 7.16634 12.9833 8.81634Z"
+                    stroke="#4F4F4F"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_3047">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Manage account
+            </div>
+            <div
+              class="profile-menu-item"
+              onclick="window.location.href='my-trips.html'"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.50033 15H17.5003V16.6667H2.50033V15ZM17.9245 7.10583C17.8121 6.76825 17.5702 6.48913 17.252 6.32988C16.9338 6.17064 16.5654 6.1443 16.2278 6.25667L12.5003 7.5L5.83366 5L4.16699 5.83333L9.16699 9.16667L5.83366 10.8333L2.50033 9.16667L1.66699 10L5.00033 13.3333L17.1228 8.7875C17.4481 8.66539 17.7133 8.42196 17.8628 8.10835C18.0123 7.79475 18.0344 7.4354 17.9245 7.10583Z"
+                  fill="#4F4F4F"
+                />
+              </svg>
+              My trips
+            </div>
+            <div
+              class="profile-menu-item"
+              onclick="window.location.href='checkout.html'"
+            >
+              <svg
+                width="20"
+                height="18"
+                viewBox="0 0 20 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.834 8.2915H5.83398"
+                  stroke="#4F4F4F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.66699 8.2917V4.4417C1.66699 2.7417 3.04199 1.3667 4.74199 1.3667H9.42533C11.1253 1.3667 12.5003 2.42503 12.5003 4.12503"
+                  stroke="#4F4F4F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.567 9.16667C14.1503 9.56667 13.9503 10.1833 14.117 10.8167C14.3253 11.5917 15.092 12.0833 15.892 12.0833H16.667V13.2917C16.667 15.1333 15.1753 16.625 13.3337 16.625H5.00033C3.15866 16.625 1.66699 15.1333 1.66699 13.2917V7.45833C1.66699 5.61667 3.15866 4.125 5.00033 4.125H13.3337C15.167 4.125 16.667 5.625 16.667 7.45833V8.66667H15.767C15.3003 8.66667 14.8753 8.85 14.567 9.16667V9.16667Z"
+                  stroke="#4F4F4F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.3338 9.5165V11.2332C18.3338 11.6998 17.9505 12.0832 17.4755 12.0832H15.8672C14.9672 12.0832 14.1422 11.4248 14.0672 10.5248C14.0172 9.99984 14.2172 9.50817 14.5672 9.1665C14.8755 8.84984 15.3005 8.6665 15.7672 8.6665H17.4755C17.9505 8.6665 18.3338 9.04984 18.3338 9.5165V9.5165Z"
+                  stroke="#4F4F4F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Reward and wallet
+            </div>
+            <div
+              class="profile-menu-item"
+              onclick="window.location.href='home.html'"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.584 13.6998C12.3257 16.6998 10.784 17.9248 7.40898 17.9248L7.30065 17.9248C3.57565 17.9248 2.08398 16.4331 2.08398 12.7081L2.08399 7.2748C2.08399 3.5498 3.57565 2.05814 7.30065 2.05814L7.40899 2.05814C10.759 2.05814 12.3007 3.26647 12.5757 6.21647"
+                  stroke="#4F4F4F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.50006 10L16.9834 10"
+                  stroke="#4F4F4F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.1253 12.7915L17.917 9.99984L15.1253 7.20817"
+                  stroke="#4F4F4F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Sign out
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -174,7 +318,7 @@
           </div>
         </div>
       </div>
-      <h2> Based on your history</h2>
+      <h2>Based on your history</h2>
       <div class="based-on-history">
         <div class="place-card">
           <img src="./country/aus.jpg" />
@@ -196,7 +340,6 @@
           <h2>Australia</h2>
           <p>2246 properties</p>
         </div>
-        
       </div>
 
       <div class="warning">
@@ -232,8 +375,9 @@
         Check the latest COVID-19 restrictions before you travel.
         <a href="#">Learn more</a>
       </div>
-
+      
       <footer class="copyright">&copy;my Dream Place 2024</footer>
     </main>
   </body>
+  <script src="./script.js"></script>
 </html>

@@ -638,3 +638,35 @@ select {
     border-radius: 8px;
 
 }
+#profile-pic{
+  cursor: pointer;
+}
+.profile-menu{
+  display:none;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  border-radius: 8px;
+}
+.profile-menu .profile-menu-item:last-child{
+    border-bottom: 0px solid gray;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.profile-menu-item{
+  color:#212529;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: start;
+  padding: 20px;
+  border-bottom: 0.2px solid rgb(172, 170, 170);
+
+  font-size: 20px;
+  z-index: 20000;
+  cursor: pointer;
+  box-shadow: 4px 18px 50px -2px rgba(0,0,0,0.12);
+}

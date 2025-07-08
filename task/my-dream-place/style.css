@@ -26,6 +26,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .navbar ul {
@@ -252,7 +253,9 @@ main {
   height: 280px;
   position: relative;
 }
-
+.gallery-inspiration .gallery-item-inspiration:nth-child(2) {
+  background-image: url("images/vegan.png");
+}
 .inspiration-text {
   display: flex;
   position: relative;
@@ -444,6 +447,7 @@ main {
   width: 32px;
   height: 32px;
   border-radius: 50px;
+  position: relative;
 }
 
 .search-nav .btn-group {
@@ -461,7 +465,7 @@ main {
 }
 
 .search-form-group {
-  top: 7%;
+  top: 8%;
   position: absolute;
   left: 50%;
 }
@@ -858,7 +862,7 @@ main {
 .card-reviews {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 18px;
   margin-bottom: 16px;
 }
 
@@ -1458,4 +1462,34 @@ main {
   align-items: center;
   height: 60px;
 }
-
+#profile-pic{
+  cursor: pointer;
+}
+.profile-menu{
+  display:none;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  border-radius: 8px;
+}
+.profile-menu .profile-menu-item:last-child{
+    border-bottom: 0px solid gray;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.profile-menu-item{
+  color:#212529;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: start;
+  padding: 20px;
+  border-bottom: 0.2px solid rgb(172, 170, 170);
+  background-color: white;
+  font-size: 20px;
+  z-index: 2;
+  cursor: pointer;
+  box-shadow: 4px 18px 50px -2px rgba(0,0,0,0.12);
+}
