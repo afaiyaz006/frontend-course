@@ -459,11 +459,13 @@ main {
   top: 100%;
   left: 50%;
 }
+
 .search-form-group {
   top: 7%;
   position: absolute;
   left: 50%;
 }
+
 .search-grid {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -679,11 +681,11 @@ main {
   transition: transform 0.3s;
 }
 
-.switch input:checked + .slider {
+.switch input:checked+.slider {
   background-color: #4caf50;
 }
 
-.switch input:checked + .slider::before {
+.switch input:checked+.slider::before {
   transform: translateX(12px);
   /* 32 - 20 = 12 */
 }
@@ -698,12 +700,14 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 .heading-main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 16px;
 }
+
 .selector {
   display: flex;
   flex-direction: row;
@@ -734,12 +738,14 @@ main {
   border-left-width: 1px;
   border-right-width: 0px;
 }
+
 /* Wrapper for positioning the label and arrow */
 .dropdown-wrapper {
   position: relative;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
-  width: 250px; /* Adjust width as needed */
+  width: 250px;
+  /* Adjust width as needed */
 }
 
 /* The actual label text ("Sort by") */
@@ -763,14 +769,16 @@ main {
 
   /* Styling */
   width: 100%;
-  padding: 24px 40px 8px 12px; /* Top padding makes space for the label */
+  padding: 24px 40px 8px 12px;
+  /* Top padding makes space for the label */
   border: 1px solid #ced4da;
   border-radius: 8px;
   background-color: #ffffff;
   font-size: 16px;
   color: #212529;
   cursor: pointer;
-  outline: none; /* Removes the focus outline */
+  outline: none;
+  /* Removes the focus outline */
   transition: border-color 0.15s ease-in-out;
   align-items: center;
 }
@@ -809,7 +817,8 @@ main {
   border: 1px solid #e0e0e0;
   border-radius: 16px;
   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
-  overflow: hidden; /* Ensures image corners are rounded */
+  overflow: hidden;
+  /* Ensures image corners are rounded */
 
   margin-top: 10px;
   margin-bottom: 15px;
@@ -819,7 +828,8 @@ main {
 .card-image {
   width: 320px;
   object-fit: cover;
-  flex-shrink: 0; /* Prevents the image from shrinking */
+  flex-shrink: 0;
+  /* Prevents the image from shrinking */
 }
 
 /* Wrapper for all text content */
@@ -853,7 +863,8 @@ main {
 }
 
 .stars {
-  color: #f9a825; /* Orange/Yellow for stars */
+  color: #f9a825;
+  /* Orange/Yellow for stars */
   font-size: 18px;
   position: relative;
   display: inline-block;
@@ -865,7 +876,8 @@ main {
   display: inline-block;
   overflow: hidden;
   width: 50%;
-  color: #e0e0e0; /* Color for the empty half */
+  color: #e0e0e0;
+  /* Color for the empty half */
 }
 
 .review-text {
@@ -878,7 +890,8 @@ main {
   font-size: 14px;
   color: #495057;
   line-height: 1.5;
-  margin-bottom: auto; /* Pushes the button to the bottom */
+  margin-bottom: auto;
+  /* Pushes the button to the bottom */
 }
 
 .card-description p {
@@ -895,7 +908,8 @@ main {
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  align-self: flex-start; /* Don't stretch full width */
+  align-self: flex-start;
+  /* Don't stretch full width */
   transition: background-color 0.2s;
 }
 
@@ -907,8 +921,10 @@ main {
 .card-booking-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Align all items to the right */
-  flex-shrink: 0; /* Prevent this column from shrinking */
+  align-items: flex-end;
+  /* Align all items to the right */
+  flex-shrink: 0;
+  /* Prevent this column from shrinking */
   text-align: right;
 }
 
@@ -981,11 +997,13 @@ main {
   display: flex;
   justify-content: center;
 }
+
 .hotel-cards .load-more .load-more-btn {
   background-color: #2f80ed1a;
   color: #2f80ed;
   padding: 10px;
 }
+
 .destination-form-group .product-details-availability {
   position: static;
 }
@@ -1027,9 +1045,11 @@ main {
   border-radius: 12px;
   display: block;
 }
+
 .product-details-nav ul li a {
   color: black;
 }
+
 .product-details-nav h3 {
   color: black;
 }
@@ -1038,4 +1058,372 @@ main {
   .photo-gallery-container {
     flex-direction: column;
   }
+}
+
+.tabs {
+  display: block;
+
+
+
+}
+
+.tab-buttons {
+  display: flex;
+
+  box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.tab-buttons .btn:first-child {
+  border-bottom: 2px solid #2f80ed;
+}
+
+.tab-button {
+  background-color: #ffffff;
+  border-style: none;
+  color: #333333;
+  border: 0px solid #2f80ed;
+  border-radius: 0px;
+}
+
+.tab-button:hover {
+  background-color: #ffffff00;
+  color: #333333;
+  border-bottom: 2px solid #2f80ed;
+  border-radius: 0px;
+
+}
+
+.resort-info {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.just-stars {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.just-stars p {
+  margin-left: 20px;
+}
+
+.location {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.info-card {
+  background-color: #ffffff;
+
+  max-width: 700px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-section {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.overview-section {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.info-card h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #202124;
+  margin-top: 0;
+  background-color: #fff;
+  margin-bottom: 16px;
+}
+
+.info-card p {
+  color: #5f6368;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.info-card p:last-child {
+  margin-bottom: 0;
+}
+
+.facilities-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 24px;
+}
+
+.facility-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* Space between icon and text */
+  font-size: 14px;
+  color: #3c4043;
+}
+
+.facility-icon {
+
+  color: #1a73e8;
+  font-size: 20px;
+  line-height: 1;
+
+
+  font-size: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #e8f0fe;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+}
+
+.resort-location {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  max-width: 500px;
+}
+
+.location-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.location-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #202124;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+.location-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.location-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #3c4043;
+}
+
+.location-icon {
+  font-size: 20px;
+  color: #5f6368;
+  width: 24px;
+  text-align: center;
+}
+
+.location-time {
+  color: #5f6368;
+  white-space: nowrap;
+}
+
+.product-detail-form-group {
+  display: static;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 37px 0px #00000026;
+  padding: 0 auto;
+}
+.product-detail-form-group .destination-form {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+.available-rooms h1{
+  margin-bottom: 10px;
+}
+
+.product-detail-form-group  .destination-form input{
+  width: 500px;
+}
+.room-cards {
+  display: flex;
+  gap: 24px; 
+  flex-wrap: wrap; 
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.room-card {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e0e0e0;
+  width: 400px;
+  overflow: hidden; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.room-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #202124;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.card-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  margin-bottom: 24px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: #5f6368;
+}
+
+.detail-icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.5;
+  color: #5f6368;
+  flex-shrink: 0;
+}
+
+.reserve-button {
+  display: block;
+  width: 100%;
+  background-color: #2979ff;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 14px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reserve-button:hover {
+  background-color: #1c65e3;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+.promo-card {
+  font-family: 'Poppins', sans-serif;
+  background-color: #2979ff; /* A solid, vibrant blue matches the image better */
+  color: #ffffff;
+  width: 400px;
+  height: 350px;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(41, 121, 255, 0.4);
+  
+  display: flex;
+  align-items: center; 
+  position: relative;
+  overflow: hidden; 
+}
+
+/* --- Left Side: Text --- */
+.promo-content {
+  /* This column takes up the available space and holds the text */
+  flex: 1;
+  z-index: 1; /* Ensures text is on top of the illustration if they overlap */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.promo-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.promo-details {
+  margin-top: 24px;
+}
+
+.promo-details p {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.promo-code {
+  color: #ffc400; /* Bright, vibrant yellow for the code */
+  font-size: 36px;
+  margin-top: 4px;
+}
+
+/* --- Right Side: Illustration --- */
+.promo-illustration img {
+  position: absolute; /* Positions the image relative to .promo-card */
+  right: 20px;
+  bottom: 0;
+  height: 95%; /* Adjust size as needed */
+  width: auto;
 }
