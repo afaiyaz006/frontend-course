@@ -1430,5 +1430,32 @@ main {
 
 .reservation{
   display:flex;
-  flex-direction: ro;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
 }
+
+.reservation-room-payment-options{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.reservation-room-card{
+  background-color: #FFFFFF;
+  width: 810px;
+  height: 328px;
+  border-radius: 8px;
+  
+}
+.reservation-room-card-title{
+  background-color: #2F80ED;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 10px;
+  color: white;
+  align-items: center;
+  height: 60px;
+}
+
