@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0 0px;
+    position: relative;
+
+}
+
+main {
+    margin: 0 50px;
+}
+
+.header-navbar {
+    padding-top: 12px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.checkout-page h1 {
+    margin-top: 50px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.btn-group {
+    gap: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.aeroplane-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon-human {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+}
+
+.warning {
+    padding-top: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background: #fcefca;
+    border-radius: 8px;
+    margin: 50px 0px;
+    padding: 30px;
+    gap: 10px;
+}
+
+
+.facebook-btn {
+    /* Layout */
+    display: inline-flex;
+    /* Use flexbox for easy alignment */
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* Space between icon and text */
+
+    /* Styling */
+    background-color: #1877F2;
+    /* Official Facebook Blue */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    /* Remove underline from the anchor tag */
+    cursor: pointer;
+
+    /* Shadow and Transition for hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facebook-btn:hover {
+    background-color: #166FE5;
+    /* A slightly darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.facebook-btn svg {
+    /* The `fill="currentColor"` in the HTML SVG makes this work */
+    width: 24px;
+    height: 24px;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 500px;
+    gap: 10px;
+
+}
+
+.register h1 {
+    text-align: center;
+}
+
+.register .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+    border-style: none;
+    height: 50px;
+    font-size: 1.1rem;
+    background-color: #F2F2F2;
+}
+
+.form input[type="password"] {
+    position: relative;
+}
+.eye-1 {
+    position:  absolute;
+}
+
+.form input[type="submit"] {
+    height: 44px;
+    background-color: #2F80ED;
+    border-radius: 6px;
+    border-width: 0px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #0b5eca;
+    cursor: pointer;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.divider {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #4F4F4F;
+    gap: 2rem;
+
+}
+
+.divider::before,
+.divider::after {
+    flex: 1;
+    content: '';
+    padding: 1px;
+    background-color: rgb(49, 49, 49, 0.3);
+    margin: 1px;
+    color: rgb(49, 49, 49, 0.1);
+
+}
+
+.google-btn {
+    display: flex;
+    gap: 10px;
+    background-color: white;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    height: 44px;
+
+    border: 1px solid #E0E0E0
+}
+
+.google-btn:hover {
+    border: 2px solid #E0E0E0
+}
+
+.already-account p,
+.create-account-toc p {
+    color: #4F4F4F;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.already-account a {
+    text-decoration: none;
+}
+
+.create-account-toc a{
+    text-decoration: none;
+}
+.password-disclaimer{
+     color: #4F4F4F;
+    text-align: center;
+    padding: 10px 10px;
+}
