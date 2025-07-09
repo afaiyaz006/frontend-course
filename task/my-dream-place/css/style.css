@@ -55,7 +55,7 @@ main {
 .hero {
   display: flex;
   flex-direction: column;
-  background-image: url("./bg-image.png");
+  background-image: url("../bg-image.png");
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -141,7 +141,7 @@ main {
 .going {
   width: 300px;
   padding-left: 40px;
-  background-image: url("./icons/map.png");
+  background-image: url("../icons/map.png");
   background-position: 10px 10px;
   background-repeat: no-repeat;
   background-position: 10px 13px;
@@ -150,7 +150,7 @@ main {
 .check-in {
   width: 200px;
   padding-left: 40px;
-  background-image: url("./icons/calendar.png");
+  background-image: url("../icons/calendar.png");
   background-position: 10px 10px;
   background-repeat: no-repeat;
   background-position: 10px 13px;
@@ -159,7 +159,7 @@ main {
 .check-out {
   width: 200px;
   padding-left: 40px;
-  background-image: url("./icons/calendar.png");
+  background-image: url("../icons/calendar.png");
   background-position: 10px 10px;
   background-repeat: no-repeat;
   background-position: 10px 13px;
@@ -168,7 +168,7 @@ main {
 .guests {
   width: 250px;
   padding-left: 40px;
-  background-image: url("./icons/user-1.png");
+  background-image: url("../icons/user-1.png");
   background-position: 10px 10px;
   background-repeat: no-repeat;
   background-position: 10px 13px;
@@ -244,7 +244,7 @@ main {
 }
 
 .gallery-item-inspiration {
-  background-image: url("./country/sydney.png");
+  background-image: url("../country/sydney.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -254,7 +254,10 @@ main {
   position: relative;
 }
 .gallery-inspiration .gallery-item-inspiration:nth-child(2) {
-  background-image: url("images/vegan.png");
+  background-image: url("../images/vegan.png");
+}
+.gallery-inspiration .gallery-item-inspiration:nth-child(3){
+  background-image: url("../country/lake-side.jpg");
 }
 .inspiration-text {
   display: flex;
@@ -306,7 +309,7 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("./country/ocean.jpg");
+  background-image: url("../country/ocean.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1492,4 +1495,35 @@ main {
   z-index: 2;
   cursor: pointer;
   box-shadow: 4px 18px 50px -2px rgba(0,0,0,0.12);
+}
+
+
+/* Extra small devices (phones, portrait) */
+@media (max-width: 479px) {
+  /* styles */
+}
+
+/* Small devices (phones, landscape) */
+@media (min-width: 480px) and (max-width: 767px) {
+  /* styles */
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* styles */
+}
+
+/* Large devices (laptops/desktops) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* styles */
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1280px) {
+  /* styles */
+}
+
+/* 4K screens and larger */
+@media (min-width: 1920px) {
+  /* styles */
 }

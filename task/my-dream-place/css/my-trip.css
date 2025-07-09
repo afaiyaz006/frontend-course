@@ -68,12 +68,13 @@ main {
 
 .warning {
     padding-top: 10px;
+
     align-items: center;
     display: flex;
     flex-direction: row;
     background: #fcefca;
     border-radius: 8px;
-    margin: 50px 0px;
+    margin: 80px 0px;
     padding: 30px;
     gap: 10px;
 }
@@ -546,7 +547,7 @@ select {
 
 .trip-card img {
     width: 290px;
-    height: 200px;
+    height: 210px;
     border: 1px;
 }
 
@@ -622,7 +623,8 @@ select {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-top: 10px;
+    margin-top:10px;
+
 }
 .place-card{
     display: flex;
