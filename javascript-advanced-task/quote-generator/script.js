@@ -1,4 +1,5 @@
 var datas = [];
+currentData = "";
 document.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed");
   getQuotes();
@@ -20,6 +21,7 @@ async function getQuotes() {
       datas = jsonData;
 
       let randomQuote = jsonData[getRandomNumber()];
+      currentData = randomQuote.quote;
       console.log(randomQuote);
       document.getElementById("quote-data").innerHTML = randomQuote.quote;
       document.getElementById("author-data").innerHTML = randomQuote.author;
@@ -30,6 +32,12 @@ async function getQuotes() {
 }
 function onNewQuoteButtonClicked() {
   randomQuote = datas[getRandomNumber()];
+  currentData = randomQuote.quote;
   document.getElementById("quote-data").innerHTML = randomQuote.quote;
   document.getElementById("author-data").innerHTML = randomQuote.author;
+}
+
+function shareTweet() {
+  console.log(currentData)
+  window.open("https://twitter.com/intent/tweet?text=" + currentData.toString());
 }

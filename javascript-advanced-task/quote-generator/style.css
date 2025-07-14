@@ -87,6 +87,12 @@ body {
     background-color: rgb(64, 63, 63);
     cursor: pointer;
 }
+.new-quote-button:active{
+     transform: translateY(4px);
+}
+.twitter-share-button:active{
+    transform: translateY(4px);
+}
 
 .loader {
     width: 150px;
