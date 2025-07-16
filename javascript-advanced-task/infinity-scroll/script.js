@@ -8,7 +8,7 @@ function addImages(imageUrls) {
   document.getElementById("images").innerHTML += data;
 }
 function showLoadingSpinner() {
-  document.getElementById("spinner").style.display = "inline-block";
+  document.getElementById("spinner").style.display = "flex";
 }
 function hideLoadingSpinner() {
   document.getElementById("spinner").style.display = "none";

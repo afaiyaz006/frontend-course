@@ -39,9 +39,12 @@ h1 {
     border: 5px solid #000000;
     border-bottom-color: transparent;
     border-radius: 50%;
-    display: inline-block;
+    display: flex;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
+    padding: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @keyframes rotation {
