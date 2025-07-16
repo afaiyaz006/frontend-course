@@ -1,10 +1,11 @@
 var datas = [];
 var page = 0;
+var reachedEnd = false;
 function addImages(imageUrls) {
   let data = "";
   imageUrls.forEach((url) => (data += `<img src=${url}/>`));
-//   console.log(data);
-//   console.log(document.getElementById("images"));
+  //   console.log(data);
+  //   console.log(document.getElementById("images"));
   document.getElementById("images").innerHTML += data;
 }
 function showLoadingSpinner() {
@@ -18,25 +19,28 @@ async function getImages(page, limit = 10) {
   showLoadingSpinner();
   const response = await fetch(url);
 
-//   console.log(response);
+  //   console.log(response);
   if (response.ok) {
-
     const jsonData = await response.json();
     datas = jsonData;
-    console.log("API RESPONSE ")
-    console.log(jsonData)
+    console.log("API RESPONSE ");
+    console.log(jsonData);
     imageUrls = [];
     datas.forEach((item) => imageUrls.push(item.download_url));
     addImages(imageUrls);
     hideLoadingSpinner();
+    reached = false;
   }
 }
 window.addEventListener("scroll", function () {
   if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
     console.log("Scrolled to the bottom of the page!");
-    getImages(page + 1);
-    console.log(page);
-    page += 1;
+    if(!reached){
+        getImages(page + 1);
+        console.log(page);
+        page += 1;
+        reached = true
+    }
   }
 });
 document.addEventListener("DOMContentLoaded", (event) => {
