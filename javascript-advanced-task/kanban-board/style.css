@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.body {
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+body {
+    background-image: url("./images/forest.jpg");
+
+}
+
+.boards {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgba(83, 85, 89, 0.39);
+    border: 0px solid black;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: 400px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.task {
+    background-color: rgba(83, 85, 86, 0.71);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+.task button{
+ 
+}
