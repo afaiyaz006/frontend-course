@@ -5,31 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Player</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="card">
-        <div class="image-card">
-            <img src = "https://picsum.photos/id/10/2500/1667/"/>
+      <div class="image-card">
+        <img src="https://picsum.photos/id/10/2500/1667/" alt="Album cover" />
+      </div>
+      <div class="card-content">
+        <h2 class="song-name" id="song-name">Electric Chill Machine</h2>
+        <p class="song-author" id="song-author">Jacinto Design</p>
+        <div class="timestamps">
+          <div class="start" id="start">0:00</div>
+          <div class="end" id="end">3:45</div>
         </div>
-        <div class="card-content">
-            <h2 class="song-name">Electric Chill Machine</h2>
-            <p class="song-author">Jacinto Design</p>
-            <div class="timestamps">
-                <div class="start">0.000</div>
-                <div class="end">1.000</div>
-            </div>
-            <div class="seek-bar">
-                
-            </div>
-            <div class="player-control">
-                <div class="backward"></div>
-                <div class="play"></div>
-                <div class="forward"></div>
-            </div>
+        <div class="seek-bar" id="seek-bar">
+          <div class="progress" id="progress-bar"></div>
         </div>
-
+        <audio id="audioPlayer" src="./fresh_focus.mp3" preload="auto"></audio>
+        <div class="player-control">
+          <i class="fa-solid fa-backward" id="back" onclick="previousSong()"></i>
+          <i
+            class="fa-solid fa-play"
+            id="play-button"
+            onclick="togglePlayPause()"
+          ></i>
+          <i class="fa-solid fa-forward" id="forward" onclick="nextSong()"></i>
+        </div>
+      </div>
     </div>
-   
 
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -1,60 +1,113 @@
 * {
-    margin: 20px auto;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
-    margin: 0px;
-    background-color: rgb(233, 239, 248);
+  background-color: rgb(233, 239, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    border: 0px solid black;
-    max-width:25%;
-    height: auto;
-    box-shadow: -2px 10px 25px -1px rgba(0, 0, 0, 0.76);
-    border-radius: 15px;
-    position: relative;
-    background-color: rgb(236, 236, 236);
-}
-
-.card-content {
-    padding-top: 56%;
-    display: flex;
-    flex-direction: column;
-}
-
-.seek-bar {
-    display: flex;
-    flex-direction: row;
+  background-color: rgb(236, 236, 236);
+  border-radius: 15px;
+  box-shadow: -2px 10px 25px -1px rgba(0, 0, 0, 0.76);
+  max-width: 400px;
+  height: 600px;
+  width: 90%;
+  padding-top: 100px; /* space for the floating image */
+  overflow: visible;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .image-card {
-    position: absolute;
-    margin-bottom: 10px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -110%);
-    
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
 }
 
 .image-card img {
-border: 0px solid black;
-    border-radius: 15px;
-    width: 350px;
-    height: 300px;
-    object-fit: cover;
-    object-position: bottom;
-    border: 0px solid black;
-     box-shadow: -2px 10px 25px -1px rgba(0, 0, 0, 0.76);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
 }
-.timestamps{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: inherit;
-    gap: 200px;
+
+
+.card-content {
+  padding-top: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+
+.song-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.song-author {
+  font-size: 0.9rem;
+  width: 100%;
+  text-align: center;
+  color: gray;
+}
+
+.timestamps {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.seek-bar {
+  position: relative;
+  height: 8px;
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.seek-bar .progress {
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+.player-control {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.player-control i:hover {
+  color: #007bff;
 }
