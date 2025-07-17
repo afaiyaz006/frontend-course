@@ -11,16 +11,18 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
 }
 
 .card {
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(223, 223, 223);
   border-radius: 15px;
   box-shadow: -2px 10px 25px -1px rgba(0, 0, 0, 0.76);
   max-width: 400px;
   height: 600px;
   width: 90%;
-  padding-top: 100px; /* space for the floating image */
+  padding-top: 100px;
+
   overflow: visible;
   position: relative;
   display: flex;
@@ -56,7 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 300px;
+  width: 350px;
 }
 
 
@@ -84,7 +86,7 @@ body {
   position: relative;
   height: 8px;
   width: 100%;
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   border-radius: 4px;
   overflow: hidden;
   margin: 8px 0;
@@ -98,6 +100,7 @@ body {
   background-color: #007bff;
   transition: width 0.3s ease;
 }
+
 .player-control {
   display: flex;
   justify-content: center;
@@ -110,4 +113,8 @@ body {
 
 .player-control i:hover {
   color: #a3a3a3;
+}
+.play-button{
+  width: 32px;
+  height: 32px;
 }

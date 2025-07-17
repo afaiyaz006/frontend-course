@@ -129,7 +129,7 @@ function loadSongs() {
 function nextSong() {
   counter += 1;
   songName.innerHTML = songs[counter % songs.length].displayName;
-  songAuthor.innerHTML = songs[counter % songs.length].artist;
+  songAuthor.textContent = songs[counter % songs.length].artist;
   audioPlayer.src = songs[counter % songs.length].fileUrl;
   coverImage.src = songs[counter % songs.length].imgUrl;
   audioPlayer.currentTime = 0;
@@ -142,7 +142,7 @@ function previousSong() {
     counter = songs.length + counter;
   }
   songName.innerHTML = songs[counter % songs.length].displayName;
-  songAuthor.innerHTML = songs[counter % songs.length].artist;
+  songAuthor.textContent = songs[counter % songs.length].artist;
   audioPlayer.src = songs[counter % songs.length].fileUrl;
   coverImage.src = songs[counter % songs.length].imgUrl;
   audioPlayer.currentTime = 0;
