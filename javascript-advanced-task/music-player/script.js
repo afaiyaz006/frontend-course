@@ -6,6 +6,7 @@ const progressBar = document.getElementById("progress-bar");
 const seekBar = document.getElementById("seek-bar");
 const songName = document.getElementById("song-name");
 const songAuthor = document.getElementById("song-author");
+const coverImage = document.getElementById("cover-image");
 var counter = 0;
 let isPlaying = false;
 const songs = [
@@ -14,28 +15,28 @@ const songs = [
     displayName: "Electric Chill Machine",
     artist: "Jacinto Design",
     fileUrl: "https://freepd.com/music/Fresh%20Focus.mp3",
-    imgUrl: "https://picsum.photos/seed/picsum/200/300",
+    imgUrl: "https://picsum.photos/seed/picsum1/600/400",
   },
   {
     name: "jacinto-2",
     displayName: "Seven Nation Army (Remix)",
     artist: "Jacinto Design",
     fileUrl: "https://freepd.com/music/Natural%20Vibes.mp3",
-    imgUrl: "https://picsum.photos/seed/picsum/200/300",
+    imgUrl: "https://picsum.photos/seed/picsum2/600/400",
   },
   {
     name: "jacinto-3",
     displayName: "Goodnight, Disco Queen",
     artist: "Jacinto Design",
     fileUrl: "https://freepd.com/music/And%20Just%20Like%20That.mp3",
-    imgUrl: "https://picsum.photos/seed/picsum/200/300",
+    imgUrl: "https://picsum.photos/seed/picsum982/600/400",
   },
   {
     name: "metric-1",
     displayName: "Front Row (Remix)",
     artist: "Metric/Jacinto Design",
     fileUrl: "https://freepd.com/music/Funshine.mp3",
-    imgUrl: "https://picsum.photos/seed/picsum/200/300",
+    imgUrl: "https://picsum.photos/seed/picsum4/600/400",
   },
 ];
 
@@ -117,15 +118,20 @@ function progressBarUpdate() {
   console.log(audioPlayer);
 }
 function loadSongs() {
-  songName.innerHTML = songs[0].displayName;
-  songAuthor.innerHTML = songs[0].artist;
-  audioPlayer.src = songs[0].fileUrl;
+    songName.innerHTML = songs[counter % songs.length].displayName;
+  songAuthor.innerHTML = songs[counter % songs.length].artist;
+  audioPlayer.src = songs[counter % songs.length].fileUrl;
+  coverImage.src = songs[counter % songs.length].imgUrl;
+  audioPlayer.currentTime = 0;
+  pause();
+  changeIcon(false);
 }
 function nextSong() {
   counter += 1;
   songName.innerHTML = songs[counter % songs.length].displayName;
   songAuthor.innerHTML = songs[counter % songs.length].artist;
   audioPlayer.src = songs[counter % songs.length].fileUrl;
+  coverImage.src = songs[counter % songs.length].imgUrl;
   audioPlayer.currentTime = 0;
   pause();
   changeIcon(false);
@@ -138,6 +144,7 @@ function previousSong() {
   songName.innerHTML = songs[counter % songs.length].displayName;
   songAuthor.innerHTML = songs[counter % songs.length].artist;
   audioPlayer.src = songs[counter % songs.length].fileUrl;
+  coverImage.src = songs[counter % songs.length].imgUrl;
   audioPlayer.currentTime = 0;
   pause();
   changeIcon(false);
