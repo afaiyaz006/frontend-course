@@ -58,7 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 350px;
+  width: 85%;
 }
 
 
@@ -114,7 +114,8 @@ body {
 .player-control i:hover {
   color: #a3a3a3;
 }
-.play-button{
+
+.play-button {
   width: 32px;
   height: 32px;
 }
